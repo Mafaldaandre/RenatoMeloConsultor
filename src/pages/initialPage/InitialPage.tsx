@@ -130,10 +130,7 @@ export const InitialPage = () => {
             <AboutConsultant>
               <span>Negociação Habilidosa: </span>Sou um negociador experiente e
               sempre me esforço para obter o melhor negócio possível. Sua
-              satisfação é o meu objetivo final. Assistência Completa: Desde a
-              pesquisa até a assinatura do contrato, estou ao seu lado em todas
-              as etapas do processo. Respondo a todas as suas perguntas e
-              asseguro que esteja bem informado.
+              satisfação é o meu objetivo final.
             </AboutConsultant>
           </TextContentAbout>
         </div>
