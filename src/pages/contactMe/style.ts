@@ -378,6 +378,7 @@ export const ToSend = styled.button`
 
   @media screen and (max-width: 767px) {
     transition: none;
+    color: black;
     &:hover {
       transform: none;
     }
