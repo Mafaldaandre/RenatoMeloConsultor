@@ -154,8 +154,9 @@ export const InitialPage = () => {
         </AboutConsultant>
         <AboutConsultant>
           Se procura uma experiência imobiliária confiável e focada nos seus
-          interesses, entre em contato comigo para o número 926 649 600 ou para
-          o email renato.melo@imorriscas.pt. Adoraria ser seu guia no
+          interesses, entre em contato comigo para o número{" "}
+          <strong>926 649 600</strong> ou para o email{" "}
+          <strong>renato.melo@imorriscas.pt</strong>. Adoraria ser seu guia no
           emocionante mundo do mercado imobiliário.
         </AboutConsultant>
       </LeftContent>
