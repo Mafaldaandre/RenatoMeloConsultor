@@ -29,6 +29,7 @@ export const HeaderContainer = styled.header`
 export const LogoVideo = styled.video`
   width: 181px;
   height: 181px;
+  pointer-events: none;
 
   @media screen and (max-width: 991px) {
     width: 160px;

@@ -91,6 +91,7 @@ export const ConteinerNoFavorites = styled.div`
 export const VideoFavorites = styled.video`
   border-radius: 999px;
   margin: 50px;
+  pointer-events: none;
   @media screen and (max-width: 767px) {
     width: 70%;
   }

@@ -19,6 +19,7 @@ export const LoadingContainer = styled.div`
 export const Video = styled.video`
   width: 50%;
   padding: 50px;
+  pointer-events: none;
   @media screen and (max-width: 767px) {
     width: 80%;
   }

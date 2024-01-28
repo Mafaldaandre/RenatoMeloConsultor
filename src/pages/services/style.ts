@@ -32,6 +32,7 @@ export const ContainerServices = styled.div`
 export const Video = styled.video`
   width: 451px;
   height: 349px;
+  pointer-events: none;
 
   @media screen and (max-width: 576px) {
     width: 296px;
