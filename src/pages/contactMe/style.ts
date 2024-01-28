@@ -11,7 +11,7 @@ export const BackgroundTanks = styled.div`
   width: 90%;
   margin: auto;
   border-radius: 60px;
-  background: #f9eac1;
+  background: #f8ecc6;
   margin-top: 5%;
   margin-bottom: 5%;
   position: relative;
@@ -40,7 +40,7 @@ export const Background = styled.div`
   margin: auto;
   border-radius: 60px;
   min-height: 100vh;
-  background: #f9eac1;
+  background: #f8ecc6;
   margin-top: 5%;
   margin-bottom: 5%;
   @media screen and (max-width: 767px) {
@@ -50,9 +50,8 @@ export const Background = styled.div`
 
 export const Form = styled.form`
   padding-bottom: 50px;
-
   margin: 50px 0px;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 991px) {
     padding-bottom: 30px;
     margin: 30px 0px;
   }
@@ -63,7 +62,7 @@ export const CenterImage = styled.div`
   position: relative;
   width: 111%;
   left: -5.5%;
-  background-color: #ecd899;
+  background-color: #eedda4;
   margin: 50px 0px;
   display: flex;
   justify-content: space-around;
@@ -105,13 +104,11 @@ const moveInCircle = keyframes`
 `;
 
 export const CenterImageTanks = styled.div`
-  background: url(${require("../../assets/imageBackground.png")});
+  background-color: #eedda4;
   border-radius: 60px;
   width: 111%;
   left: -5.5%;
   margin: 50px;
-  background-size: cover;
-  background-repeat: no-repeat;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -135,7 +132,7 @@ export const CenterImageTanks = styled.div`
 `;
 
 export const FormContainer = styled.div`
-  width: 50%;
+  width: 100%;
   text-align: center;
   margin-top: 10px;
 
@@ -149,6 +146,9 @@ export const FormContainer = styled.div`
 `;
 
 export const VideoContainer = styled.div`
+  width: 70%;
+  display: flex;
+  justify-content: center;
   @media screen and (max-width: 991px) {
     width: 100%;
     display: flex;
@@ -172,12 +172,12 @@ export const VideoContainer = styled.div`
 // `;
 
 export const Image = styled.img`
-  pointer-events: none;
-  &::-webkit-media-controls {
-    display: none !important;
-  }
+  width: 80%;
+  padding-left: 50px;
+  padding-bottom: 100px;
   @media screen and (max-width: 991px) {
-    width: 27%;
+    width: 50%;
+    padding: 0;
   }
 `;
 export const InputContainer = styled.div`
@@ -196,9 +196,9 @@ export const Input = styled.input<InputContainerProps>`
   align-items: center;
   gap: 10px;
   border-radius: 14px;
-  border: ${(props) => (props.hasfocus ? "2px solid #f1cb50" : "none")};
+  border: ${(props) => (props.hasfocus ? "2px solid #f7d15b" : "none")};
   background-color: ${(props) =>
-    props.hasfocus ? "#ecd899" : " rgb(240 , 229, 215);"};
+    props.hasfocus ? "#eedda4" : " rgb(240 , 229, 215);"};
   height: 60px;
   box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
   outline: none;
@@ -208,7 +208,7 @@ export const Input = styled.input<InputContainerProps>`
   border: ${(props) => (props.haserror ? "1px solid #d14d4d" : "")};
   &::placeholder {
     font-size: 18px;
-    background-color: ${(props) => (props.hasfocus ? "#ecd899" : "")};
+    background-color: ${(props) => (props.hasfocus ? "#eedda4" : "")};
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     color: black;
@@ -217,7 +217,7 @@ export const Input = styled.input<InputContainerProps>`
 
   &:hover {
     background-color: ${(props) =>
-      props.hasfocus ? "rgb(240 , 229, 215)" : "#f9eac1"};
+      props.hasfocus ? "rgb(240 , 229, 215)" : "#f8ecc6"};
   }
   &:-webkit-autofill,
   &:-webkit-autofill:hover,
@@ -237,12 +237,12 @@ export const Label = styled.label<InputContainerProps>`
   left: 3%;
   font-size: 12px;
   transition: top 0.3s, font-size 0.3s;
-  background-color: ${(props) => (props.hasfocus ? "#ecd899" : "")};
+  background-color: ${(props) => (props.hasfocus ? "#eedda4" : "")};
   padding: 0 20px;
   font-family: Poppins, sans-serif;
   font-weight: 600;
   color: black;
-  border: 1px solid #f1cb50;
+  border: 1px solid #f7d15b;
   opacity: ${(props) => (props.hasfocus ? "1" : "0")};
   border-radius: 10px;
 `;
@@ -264,9 +264,9 @@ export const TextArea = styled.textarea<InputContainerProps>`
   font-weight: 600;
   width: 100%;
   border-radius: 14px;
-  border: ${(props) => (props.hasfocus ? "2px solid #f1cb50" : "none")};
+  border: ${(props) => (props.hasfocus ? "2px solid ##f7d15b" : "none")};
   background-color: ${(props) =>
-    props.hasfocus ? "#ecd899" : " rgb(240, 229, 215);"};
+    props.hasfocus ? "#eedda4" : " rgb(240, 229, 215);"};
   min-height: 60px;
   box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
   outline: none;
@@ -274,7 +274,7 @@ export const TextArea = styled.textarea<InputContainerProps>`
   cursor: pointer;
   &::placeholder {
     font-size: 18px;
-    background-color: ${(props) => (props.hasfocus ? "#ecd899" : "")};
+    background-color: ${(props) => (props.hasfocus ? "#eedda4" : "")};
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     color: black;
@@ -282,7 +282,7 @@ export const TextArea = styled.textarea<InputContainerProps>`
   }
   &:hover {
     background-color: ${(props) =>
-      props.hasfocus ? "rgb(240 , 229, 215)" : "#f9eac1"};
+      props.hasfocus ? "rgb(240 , 229, 215)" : "#f8ecc6"};
   }
   @media screen and (max-width: 991px) {
     font-size: 16px;
@@ -305,7 +305,7 @@ export const ButtonOptions = styled.div<InputContainerProps>`
   cursor: pointer;
   box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
   &:hover {
-    background-color: #f9eac1;
+    background-color: #f8ecc6;
   }
   ${(props) =>
     props.isopen &&
@@ -344,7 +344,7 @@ export const Options = styled.li`
   display: flex;
   align-items: center;
   &:hover {
-    background-color: #f9eac1;
+    background-color: #f8ecc6;
   }
   @media screen and (max-width: 991px) {
     font-size: 16px;
@@ -368,8 +368,8 @@ export const ToSend = styled.button`
   transition: transform 0.3s ease-in-out;
 
   &:hover {
-    background-color: #f9eac1;
-    border: 2px solid #f1cb50;
+    background-color: #f8ecc6;
+    border: 2px solid #f7d15b;
     transform: scale(1.02);
   }
   @media screen and (max-width: 991px) {
@@ -390,7 +390,7 @@ export const Link = styled(NavLink)`
   width: 215px;
   height: 60px;
   border-radius: 14px;
-  background-color: #ecd899;
+  background-color: #eedda4;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 18px;
@@ -402,8 +402,8 @@ export const Link = styled(NavLink)`
   align-items: center;
   justify-content: center;
   &:hover {
-    background-color: #f9eac1;
-    border: 2px solid #f1cb50;
+    background-color: #f8ecc6;
+    border: 2px solid #f7d15b;
     transform: scale(1.02);
   }
   @media screen and (max-width: 991px) {

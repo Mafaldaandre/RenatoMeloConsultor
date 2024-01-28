@@ -14,7 +14,7 @@ export const HeaderContainer = styled.header`
   align-items: center;
   gap: 8px;
   border-bottom: 2px solid #fff;
-  background: #f5ca51;
+  background: #f7d15b;
 
   @media screen and (max-width: 767px) {
     height: 212px;
@@ -85,11 +85,11 @@ export const Navigation = styled.nav<NavigationProps>`
   @media screen and (max-width: 577px) {
     display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
     box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    border: 2px solid #f1cb50;
+    border: 2px solid #f7d15b;
     position: absolute;
     height: 233px;
     top: 3%;
-    background-color: #f1cb50;
+    background-color: #f7d15b;
     width: 85%;
     gap: 15px;
     flex-direction: column;
@@ -135,7 +135,7 @@ export const MenuIcon = styled.div`
     display: block;
     cursor: pointer;
     box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    border: 2px solid #f1cb50;
+    border: 2px solid #f7d15b;
     border-radius: 10px;
     z-index: 1;
   }

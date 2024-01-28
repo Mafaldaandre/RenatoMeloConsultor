@@ -4,7 +4,7 @@ export const LoadingContainer = styled.div`
   width: 90%;
   margin: auto;
   border-radius: 60px;
-  background: #f9eac1;
+  background: #f8ecc6;
   margin-top: 5%;
   margin-bottom: 5%;
   text-align: center;

@@ -4,7 +4,7 @@ export const BackgroundInitialPage = styled.div`
   width: 90%;
   margin: auto;
   border-radius: 60px;
-  background: #f9eac1;
+  background: #f8ecc6;
   margin-top: 5%;
   margin-bottom: 5%;
 
@@ -123,7 +123,7 @@ export const ContentInitialPage = styled.div`
   width: 111%;
   left: -5.5%;
   position: relative;
-  background-color: #ecd899;
+  background-color: #eedda4;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;

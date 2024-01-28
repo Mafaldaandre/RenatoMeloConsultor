@@ -8,7 +8,7 @@ export const Background = styled.div`
   width: 90%;
   margin: auto;
   border-radius: 60px;
-  background: #f9eac1;
+  background: #f8ecc6;
   margin-top: 5%;
   margin-bottom: 5%;
 
@@ -35,7 +35,7 @@ export const CenterImage = styled.div`
   position: relative;
   width: 111%;
   left: -5.5%;
-  background-color: #ecd899;
+  background-color: #eedda4;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -245,7 +245,7 @@ export const CloseIcon = styled(CloseOutlinedIcon)`
   right: 2%;
   position: absolute;
   top: 3%;
-  color: #f1cb50;
+  color: #f7d15b;
   box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
   z-index: 2;
   cursor: pointer;
@@ -254,7 +254,7 @@ export const CloseIcon = styled(CloseOutlinedIcon)`
 export const NavigationButtonExpandeBack = styled(ArrowBackIosRoundedIcon)`
   z-index: 2;
   cursor: pointer;
-  color: #f1cb50;
+  color: #f7d15b;
   margin-left: 100px;
   box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
   @media screen and (max-width: 1200px) {
@@ -274,7 +274,7 @@ export const NavigationButtonExpandeForward = styled(
   margin-right: 100px;
   z-index: 2;
   cursor: pointer;
-  color: #f1cb50;
+  color: #f7d15b;
   box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
   @media screen and (max-width: 1200px) {
@@ -323,7 +323,7 @@ export const Thumbnail = styled.img<{ active: boolean }>`
   border: 2px solid gray;
   cursor: pointer;
   aspect-ratio: 3/2;
-  border: ${(props) => (props.active ? "2px solid #f1cb50" : "none")};
+  border: ${(props) => (props.active ? "2px solid #f7d15b" : "none")};
 `;
 
 export const CarouselContainerExpande = styled.div`
@@ -375,7 +375,7 @@ export const Counter = styled.div`
 `;
 
 export const CounterExpande = styled.div`
-  color: #f1cb50;
+  color: #f7d15b;
   display: flex;
   font-size: 24px;
   font-family: "Poppins", sans-serif;
@@ -406,7 +406,7 @@ export const Back = styled(NavLink)`
   width: 215px;
   height: 60px;
   border-radius: 14px;
-  background-color: #ecd899;
+  background-color: #eedda4;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 18px;
@@ -418,8 +418,8 @@ export const Back = styled(NavLink)`
   align-items: center;
   justify-content: center;
   &:hover {
-    background-color: #f9eac1;
-    border: 2px solid #f1cb50;
+    background-color: #f8ecc6;
+    border: 2px solid #f7d15b;
     transform: scale(1.02);
   }
 

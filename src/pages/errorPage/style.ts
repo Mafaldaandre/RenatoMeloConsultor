@@ -58,8 +58,8 @@ export const Link = styled(NavLink)`
   align-items: center;
   justify-content: center;
   &:hover {
-    background-color: #f9eac1;
-    border: 2px solid #f1cb50;
+    background-color: #f8ecc6;
+    border: 2px solid #f7d15b;
     transform: scale(1.02);
   }
 

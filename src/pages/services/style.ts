@@ -8,7 +8,7 @@ export const BackgroundServices = styled.div`
   width: 90%;
   margin: auto;
   border-radius: 60px;
-  background: #f9eac1;
+  background: #f8ecc6;
   margin-top: 5%;
   margin-bottom: 5%;
 
@@ -39,7 +39,7 @@ export const Image = styled.img`
 
   @media screen and (max-width: 576px) {
     width: 296px;
-    height: 323px;
+    height: 229px;
   }
 `;
 
@@ -50,7 +50,7 @@ export const ContentServicesBackground = styled.div<ContentProps>`
   width: 106%;
   left: -3%;
   position: relative;
-  background-color: #ecd899;
+  background-color: #eedda4;
   height: 100%;
   padding: 54px 82px;
   opacity: 0;

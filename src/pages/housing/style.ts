@@ -12,7 +12,7 @@ export const Background = styled.div<StyledComponentProps>`
   width: 90%;
   margin: auto;
   border-radius: 60px;
-  background: #f9eac1;
+  background: #f8ecc6;
   margin-top: 5%;
   margin-bottom: 5%;
   position: relative;
@@ -42,9 +42,7 @@ export const CenterImage = styled.div<StyledComponentProps>`
   position: absolute;
   width: 111%;
   left: -5.5%;
-  background: url(${require("../../assets/imageBackground.png")});
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #eedda4;
   height: 675px;
   margin: 0;
   top: 50%;
@@ -90,14 +88,8 @@ export const ConteinerNoFavorites = styled.div`
 
 export const VideoFavorites = styled.img`
   border-radius: 999px;
+  width: 50%;
   margin: 50px;
-  pointer-events: none;
-  &::-webkit-media-controls {
-    display: none !important;
-  }
-  @media screen and (max-width: 767px) {
-    width: 70%;
-  }
 `;
 
 export const CardContainer = styled.div<StyledComponentProps>`
@@ -237,7 +229,7 @@ export const HeartIcon = styled(FavoriteOutlinedIcon)`
   cursor: pointer;
   &:hover {
     transform: scale(1.3);
-    color: #f9eac1;
+    color: #f8ecc6;
   }
 
   @media screen and (max-width: 767px) {
