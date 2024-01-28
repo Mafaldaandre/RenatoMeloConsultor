@@ -90,7 +90,7 @@ export const cards: CardData[] = [
     type: "Venda",
     price: "95 000 €",
     refNumber: "Ref. PTF2021-723 ",
-    imageUrl: require("../assets/terrenoSantoAntao1.jpg"),
+    imageUrl: require("../assets/terrenoSaoJoao1.jpg"),
     condition: 1,
     typeId: 3,
     numberDivisions: [
@@ -109,7 +109,7 @@ export const cards: CardData[] = [
     type: "Venda",
     price: "550 000 €",
     refNumber: "Ref. PTF2022-866 ",
-    imageUrl: require("../assets/terrenoSaoJoao1.jpg"),
+    imageUrl: require("../assets/terrenoSantoAntao1.jpg"),
     condition: 1,
     typeId: 4,
     numberDivisions: [
