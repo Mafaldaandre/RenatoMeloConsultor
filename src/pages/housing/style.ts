@@ -88,7 +88,7 @@ export const ConteinerNoFavorites = styled.div`
   }
 `;
 
-export const VideoFavorites = styled.video`
+export const VideoFavorites = styled.img`
   border-radius: 999px;
   margin: 50px;
   pointer-events: none;

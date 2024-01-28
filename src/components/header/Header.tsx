@@ -1,7 +1,8 @@
 import { useState } from "react";
 import {
   HeaderContainer,
-  LogoVideo,
+  LogoImage,
+  // LogoVideo,
   MenuHamburger,
   MenuIcon,
   Navigation,
@@ -9,7 +10,8 @@ import {
 } from "./style";
 
 export const Header = () => {
-  const logo = require("../../assets/logo.mp4");
+  // const logo = require("../../assets/logo.mp4");
+  const logogif = require("../../assets/logo.gif");
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
   const toggleMenu = () => {
@@ -23,10 +25,12 @@ export const Header = () => {
   return (
     <HeaderContainer>
       <Options to="/" className="active">
-        <LogoVideo controls autoPlay playsInline loop muted>
+        {/* <LogoVideo controls autoPlay playsInline loop muted>
           <source src={logo} type="video/mp4" />
           Seu navegador não suporta a tag de vídeo.
-        </LogoVideo>
+        </LogoVideo> */}
+        ^
+        <LogoImage src={logogif} alt="logo" />
       </Options>
 
       <MenuIcon onClick={toggleMenu}>

@@ -4,14 +4,14 @@ import {
   ContainerServices,
   ContentServices,
   ContentServicesBackground,
-  Video,
+  Image,
 } from "./style";
 
 export const Services: React.FC = () => {
-  const marketAnalysis = require("../../assets/analiseMercado.mp4");
-  const photography = require("../../assets/fotografia.mp4");
-  const energyCertificate = require("../../assets/certificadoEnergetico.mp4");
-  const bankcredit = require("../../assets/credito.mp4");
+  const marketAnalysis = require("../../assets/analiseMercado.gif");
+  const photography = require("../../assets/fotografia.gif");
+  const energyCertificate = require("../../assets/certificadoEnergetico.gif");
+  const bankcredit = require("../../assets/credito.gif");
 
   const divRefs = useRef<Array<HTMLDivElement | null>>([
     null,
@@ -57,10 +57,11 @@ export const Services: React.FC = () => {
           ref={(el) => (divRefs.current[0] = el)}
           visible={visibleDivs[0]}
         >
-          <Video controls autoPlay playsInline loop muted>
+          {/* <Video controls autoPlay playsInline loop muted>
             <source src={marketAnalysis} type="video/mp4" />
             Seu navegador não suporta a tag de vídeo.
-          </Video>
+          </Video> */}
+          <Image src={marketAnalysis} alt="Análise de Mercado" />
           <div>
             <h2>ANÁLISE DE MERCADO</h2>
             <h2>GRÁTIS</h2>
@@ -87,19 +88,21 @@ export const Services: React.FC = () => {
               destaque dos demais e que seja valorizado.
             </p>
           </div>
-          <Video controls autoPlay playsInline loop muted>
+          {/* <Video controls autoPlay playsInline loop muted>
             <source src={photography} type="video/mp4" />
             Seu navegador não suporta a tag de vídeo.
-          </Video>
+          </Video> */}
+          <Image src={photography} alt="Fotografia/Video" />
         </ContentServices>
         <ContentServicesBackground
           ref={(el) => (divRefs.current[2] = el)}
           visible={visibleDivs[2]}
         >
-          <Video controls autoPlay playsInline loop muted>
+          {/* <Video controls autoPlay playsInline loop muted>
             <source src={energyCertificate} type="video/mp4" />
             Seu navegador não suporta a tag de vídeo.
-          </Video>
+          </Video> */}
+          <Image src={energyCertificate} alt="Certificado Energético" />
           <div>
             <h2>CERTIFICAÇÃO ENERGÉTICA</h2>
             <h2>CUSTO VARIÁVEL</h2>
@@ -124,10 +127,11 @@ export const Services: React.FC = () => {
               ajusta melhor ao seu perfil, sem incorrer em custos adicionais.
             </p>
           </div>
-          <Video controls autoPlay playsInline loop muted>
+          {/* <Video controls autoPlay playsInline loop muted>
             <source src={bankcredit} type="video/mp4" />
             Seu navegador não suporta a tag de vídeo.
-          </Video>
+          </Video> */}
+          <Image src={bankcredit} alt="Crédito Bancário" />
         </ContentServices>
       </ContainerServices>
     </BackgroundServices>

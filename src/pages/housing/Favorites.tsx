@@ -25,7 +25,7 @@ import { Loading } from "../../components/loading/Loading";
 
 export const Favorites: React.FC = () => {
   const { favorites, loading, dispatch } = useFavorites();
-  const noFavorites = require("../../assets/noFavorites.mp4");
+  const noFavorites = require("../../assets/noFavorites.gif");
   const [dontFavorites, setDontFavorites] = useState<boolean>(true);
   const [numberCards, setNumberCards] = useState<boolean>(true);
 
@@ -46,10 +46,11 @@ export const Favorites: React.FC = () => {
       ) : Object.values(favorites).length === 0 ? (
         <ConteinerNoFavorites>
           <h2>Nenhum favorito encontrado!</h2>
-          <VideoFavorites controls autoPlay playsInline loop muted>
+          {/* <VideoFavorites controls autoPlay playsInline loop muted>
             <source src={noFavorites} type="video/mp4" />
             Seu navegador não suporta a tag de vídeo.
-          </VideoFavorites>
+          </VideoFavorites> */}
+          <VideoFavorites src={noFavorites} alt="Não existe favoritos" />
         </ConteinerNoFavorites>
       ) : (
         <>

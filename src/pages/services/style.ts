@@ -29,7 +29,7 @@ export const ContainerServices = styled.div`
   }
 `;
 
-export const Video = styled.video`
+export const Image = styled.img`
   width: 451px;
   height: 349px;
   pointer-events: none;

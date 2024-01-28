@@ -11,6 +11,7 @@ import {
   ErrorMessage,
   Form,
   FormContainer,
+  Image,
   Input,
   InputContainer,
   Label,
@@ -20,7 +21,6 @@ import {
   TextArea,
   Title,
   ToSend,
-  Video,
   VideoContainer,
 } from "./style";
 import { Loading } from "../../components/loading/Loading";
@@ -28,7 +28,8 @@ import { Loading } from "../../components/loading/Loading";
 type Option = string;
 
 export const ContactMe: React.FC = () => {
-  const contact = require("../../assets/contacto.mp4");
+  // const contact = require("../../assets/contacto.mp4");
+  const contactGif = require("../../assets/contacto.gif");
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [selectedOption, setSelectedOption] = useState<Option | null>(null);
   const [state, handleSubmit] = useForm("mzbnzevz");
@@ -311,10 +312,11 @@ export const ContactMe: React.FC = () => {
                 </ToSend>
               </FormContainer>
               <VideoContainer>
-                <Video controls autoPlay playsInline loop muted>
+                {/* <Video controls autoPlay playsInline loop muted>
                   <source src={contact} type="video/mp4" />
                   Seu navegador não suporta a tag de vídeo.
-                </Video>
+                </Video> */}
+                <Image src={contactGif} alt="Contacta-me" />
               </VideoContainer>
             </CenterImage>{" "}
           </Form>

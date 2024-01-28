@@ -26,7 +26,7 @@ export const HeaderContainer = styled.header`
   }
 `;
 
-export const LogoVideo = styled.video`
+export const LogoImage = styled.img`
   width: 181px;
   height: 181px;
   pointer-events: none;
@@ -44,6 +44,25 @@ export const LogoVideo = styled.video`
     height: 130px;
   }
 `;
+
+// export const LogoVideo = styled.video`
+//   width: 181px;
+//   height: 181px;
+//   pointer-events: none;
+//   &::-webkit-media-controls {
+//     display: none !important;
+//   }
+
+//   @media screen and (max-width: 991px) {
+//     width: 160px;
+//     height: 160px;
+//   }
+
+//   @media screen and (max-width: 767px) {
+//     width: 130px;
+//     height: 130px;
+//   }
+// `;
 
 export const Navigation = styled.nav<NavigationProps>`
   display: flex;

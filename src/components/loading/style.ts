@@ -16,7 +16,23 @@ export const LoadingContainer = styled.div`
   }
 `;
 
-export const Video = styled.video`
+// export const Video = styled.video`
+//   width: 50%;
+//   padding: 50px;
+//   pointer-events: none;
+//   &::-webkit-media-controls {
+//     display: none !important;
+//   }
+//   @media screen and (max-width: 767px) {
+//     width: 80%;
+//   }
+
+//   @media screen and (max-width: 577px) {
+//     width: 90%;
+//   }
+// `;
+
+export const Image = styled.img`
   width: 50%;
   padding: 50px;
   pointer-events: none;
