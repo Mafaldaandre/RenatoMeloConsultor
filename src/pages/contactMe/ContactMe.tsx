@@ -311,7 +311,7 @@ export const ContactMe: React.FC = () => {
                 </ToSend>
               </FormContainer>
               <VideoContainer>
-                <Video autoPlay loop muted>
+                <Video controls autoPlay playsInline loop muted>
                   <source src={contact} type="video/mp4" />
                   Seu navegador não suporta a tag de vídeo.
                 </Video>

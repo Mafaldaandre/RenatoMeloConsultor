@@ -57,7 +57,7 @@ export const Services: React.FC = () => {
           ref={(el) => (divRefs.current[0] = el)}
           visible={visibleDivs[0]}
         >
-          <Video autoPlay loop muted>
+          <Video controls autoPlay playsInline loop muted>
             <source src={marketAnalysis} type="video/mp4" />
             Seu navegador não suporta a tag de vídeo.
           </Video>
@@ -87,7 +87,7 @@ export const Services: React.FC = () => {
               destaque dos demais e que seja valorizado.
             </p>
           </div>
-          <Video autoPlay loop muted>
+          <Video controls autoPlay playsInline loop muted>
             <source src={photography} type="video/mp4" />
             Seu navegador não suporta a tag de vídeo.
           </Video>
@@ -96,7 +96,7 @@ export const Services: React.FC = () => {
           ref={(el) => (divRefs.current[2] = el)}
           visible={visibleDivs[2]}
         >
-          <Video autoPlay loop muted>
+          <Video controls autoPlay playsInline loop muted>
             <source src={energyCertificate} type="video/mp4" />
             Seu navegador não suporta a tag de vídeo.
           </Video>
@@ -124,7 +124,7 @@ export const Services: React.FC = () => {
               ajusta melhor ao seu perfil, sem incorrer em custos adicionais.
             </p>
           </div>
-          <Video autoPlay loop muted>
+          <Video controls autoPlay playsInline loop muted>
             <source src={bankcredit} type="video/mp4" />
             Seu navegador não suporta a tag de vídeo.
           </Video>

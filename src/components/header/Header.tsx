@@ -23,7 +23,7 @@ export const Header = () => {
   return (
     <HeaderContainer>
       <Options to="/" className="active">
-        <LogoVideo autoPlay loop muted>
+        <LogoVideo controls autoPlay playsInline loop muted>
           <source src={logo} type="video/mp4" />
           Seu navegador não suporta a tag de vídeo.
         </LogoVideo>

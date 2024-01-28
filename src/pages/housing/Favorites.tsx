@@ -46,7 +46,7 @@ export const Favorites: React.FC = () => {
       ) : Object.values(favorites).length === 0 ? (
         <ConteinerNoFavorites>
           <h2>Nenhum favorito encontrado!</h2>
-          <VideoFavorites autoPlay loop muted>
+          <VideoFavorites controls autoPlay playsInline loop muted>
             <source src={noFavorites} type="video/mp4" />
             Seu navegador não suporta a tag de vídeo.
           </VideoFavorites>
