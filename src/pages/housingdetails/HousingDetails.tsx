@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
-import { Details } from "../../data/detailsData";
+import { Details, DetailsProps } from "../../data/detailsData";
 import {
   Back,
   Background,
@@ -27,7 +27,6 @@ import {
   NavigationButtonForward,
   NavigationButtonForwardThumbnail,
   NavigationSlider,
-  NavigationSliderThumbnail,
   RefNumber,
   Slide,
   SlideContainer,
@@ -38,7 +37,7 @@ import {
   TypePrice,
 } from "./style";
 
-export const HousingDetails: React.FC<Details> = () => {
+export const HousingDetails: React.FC<DetailsProps> = () => {
   const { typeId } = useParams();
   const detailsHouses = Details.find(
     (detail) => detail.id === parseInt(typeId || "0", 10)
@@ -49,15 +48,12 @@ export const HousingDetails: React.FC<Details> = () => {
     null
   );
   const [expandedCarouselIndex, setExpandedCarouselIndex] = useState<number>(0);
-  const [thumbnailCarouselIndex, setThumbnailCarouselIndex] =
-    useState<number>(0);
   const [zoomLevel, setZoomLevel] = useState<number>(1);
   const [scrollDirection, setScrollDirection] = useState<number>(0);
-  const [isPageScrollEnabled, setIsPageScrollEnabled] = useState<boolean>(true);
+
   const [numVisibleImages, setNumVisibleImages] = useState<number>(2);
 
   const [touchStartX, setTouchStartX] = useState<number | null>(null);
-  const [activeSlide, setActiveSlide] = useState<number>(0);
 
   const [activeThumbnail, setActiveThumbnail] = useState<number>(0);
 
@@ -65,7 +61,7 @@ export const HousingDetails: React.FC<Details> = () => {
 
   const handleThumbnailClick = (index: number) => {
     setCurrentIndex(index);
-    setActiveSlide(index);
+
     setActiveThumbnail(index);
   };
 
@@ -222,12 +218,11 @@ export const HousingDetails: React.FC<Details> = () => {
 
   const openImage = (index: number) => {
     setExpandedImageIndex(index);
-    setIsPageScrollEnabled(false);
   };
 
   const closeImage = () => {
     setExpandedImageIndex(null);
-    setIsPageScrollEnabled(true);
+
     setScrollDirection(0);
   };
 

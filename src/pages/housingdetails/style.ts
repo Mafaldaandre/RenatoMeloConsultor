@@ -1,5 +1,4 @@
-import { ButtonHTMLAttributes } from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 import ArrowBackIosRoundedIcon from "@mui/icons-material/ArrowBackIosRounded";
 import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRounded";

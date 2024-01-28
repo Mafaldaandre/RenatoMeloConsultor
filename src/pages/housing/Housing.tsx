@@ -26,7 +26,7 @@ export const Housing = () => {
 
   useEffect(() => {
     setNumberCards(Object.values(cards).length > 3);
-  }, [cards]);
+  }, []);
 
   const addFavorite = (card: CardData) => {
     dispatch({ type: "ADD_FAVORITE", payload: [card] });

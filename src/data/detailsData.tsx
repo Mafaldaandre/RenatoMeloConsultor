@@ -11,7 +11,7 @@ interface Image {
   orientation?: "horizontal" | "vertical";
 }
 
-export interface Details {
+export interface DetailsProps {
   id: number;
   title: string;
   images: Image[];
@@ -23,7 +23,7 @@ export interface Details {
   description: string;
 }
 
-export const Details: Details[] = [
+export const Details: DetailsProps[] = [
   {
     id: 1,
     title: "Moradia T3+1, Bairro da Courelas, Santa Iria de Azóia",
