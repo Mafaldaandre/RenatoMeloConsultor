@@ -1,0 +1,2 @@
+# RenatoMeloConsultor
+This project is a web application developed using the React library, well-known for the efficient construction of dynamic and reactive user interfaces. It includes a "About Us" page, information about the available services, details and images of existing properties, a contact form, and a favorites page.
