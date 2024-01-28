@@ -30,6 +30,9 @@ export const LogoVideo = styled.video`
   width: 181px;
   height: 181px;
   pointer-events: none;
+  &::-webkit-media-controls {
+    display: none !important;
+  }
 
   @media screen and (max-width: 991px) {
     width: 160px;

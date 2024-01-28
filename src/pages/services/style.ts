@@ -33,6 +33,9 @@ export const Video = styled.video`
   width: 451px;
   height: 349px;
   pointer-events: none;
+  &::-webkit-media-controls {
+    display: none !important;
+  }
 
   @media screen and (max-width: 576px) {
     width: 296px;
