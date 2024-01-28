@@ -163,6 +163,9 @@ export const VideoContainer = styled.div`
 
 export const Video = styled.video`
   pointer-events: none;
+  &::-webkit-media-controls {
+    display: none !important;
+  }
   @media screen and (max-width: 991px) {
     width: 27%;
   }

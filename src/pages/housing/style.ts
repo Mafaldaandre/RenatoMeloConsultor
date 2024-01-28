@@ -92,6 +92,9 @@ export const VideoFavorites = styled.video`
   border-radius: 999px;
   margin: 50px;
   pointer-events: none;
+  &::-webkit-media-controls {
+    display: none !important;
+  }
   @media screen and (max-width: 767px) {
     width: 70%;
   }
