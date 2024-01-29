@@ -29,11 +29,7 @@ export const FooterContainer = styled.footer`
 
 export const ContainerOptions = styled.div`
   display: flex;
-  width: 90%;
-
-  @media screen and (max-width: 1200px) {
-    width: 85%;
-  }
+  width: 80%;
 
   @media screen and (max-width: 767px) {
     flex-direction: column;
@@ -120,22 +116,33 @@ export const OptionsFooter = styled(NavLink)`
 export const ContainerIcons = styled.div`
   display: flex;
   flex-direction: column;
-  width: 10%;
-  align-items: center;
+  width: 20%;
+  align-items: flex-end;
   height: 100%;
-  justify-content: space-evenly;
+
   @media screen and (max-width: 1200px) {
     width: 15%;
   }
   @media screen and (max-width: 767px) {
     width: 100%;
+    @media screen and (max-width: 767px) {
+      align-items: center;
+    }
   }
+`;
+
+export const ContainerRightFooter = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
 `;
 
 export const IconsFooter = styled.div`
   display: flex;
 
-  gap: 11px;
+  gap: 22px;
 
   @media screen and (max-width: 767px) {
     position: inherit;
@@ -149,8 +156,8 @@ export const IconsFooter = styled.div`
 `;
 
 export const Imorriscas = styled.img`
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
 
   @media screen and (max-width: 991px) {
     width: 100px;

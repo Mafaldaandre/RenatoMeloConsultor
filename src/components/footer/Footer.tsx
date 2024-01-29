@@ -31,30 +31,33 @@ export const Footer = () => {
       </ContainerOptions>
       <ContainerIcons>
         {" "}
-        <Imorriscas src={imorriscas} alt="Parte do logo, predios em preto" />
-        <IconsFooter>
-          <IconWithTransition
-            href="https://www.facebook.com/profile.php?id=61552064212594"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Facebook fontSize="large" />
-          </IconWithTransition>
-          <IconWithTransition
-            href="https://linktr.ee/Renatomeloimorriscas"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <InsertLinkSharp fontSize="large" />
-          </IconWithTransition>
-          <IconWithTransition
-            href="https://www.instagram.com/renatomelo_imorriscas"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Instagram fontSize="large" />
-          </IconWithTransition>
-        </IconsFooter>
+        <div>
+          <Imorriscas src={imorriscas} alt="Logo imorriscas" />
+
+          <IconsFooter>
+            <IconWithTransition
+              href="https://www.facebook.com/profile.php?id=61552064212594"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Facebook fontSize="large" />
+            </IconWithTransition>
+            <IconWithTransition
+              href="https://linktr.ee/Renatomeloimorriscas"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <InsertLinkSharp fontSize="large" />
+            </IconWithTransition>
+            <IconWithTransition
+              href="https://www.instagram.com/renatomelo_imorriscas"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Instagram fontSize="large" />
+            </IconWithTransition>
+          </IconsFooter>
+        </div>
       </ContainerIcons>
     </FooterContainer>
   );
