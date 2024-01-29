@@ -4,6 +4,7 @@ import Instagram from "@mui/icons-material/Instagram";
 import {
   ContainerIcons,
   ContainerOptions,
+  ContainerRightFooter,
   FooterContainer,
   IconWithTransition,
   IconsFooter,
@@ -31,7 +32,7 @@ export const Footer = () => {
       </ContainerOptions>
       <ContainerIcons>
         {" "}
-        <div>
+        <ContainerRightFooter>
           <Imorriscas src={imorriscas} alt="Logo imorriscas" />
 
           <IconsFooter>
@@ -57,7 +58,7 @@ export const Footer = () => {
               <Instagram fontSize="large" />
             </IconWithTransition>
           </IconsFooter>
-        </div>
+        </ContainerRightFooter>
       </ContainerIcons>
     </FooterContainer>
   );

@@ -29,7 +29,7 @@ export const FooterContainer = styled.footer`
 
 export const ContainerOptions = styled.div`
   display: flex;
-  width: 80%;
+  width: 85%;
 
   @media screen and (max-width: 767px) {
     flex-direction: column;
@@ -125,9 +125,7 @@ export const ContainerIcons = styled.div`
   }
   @media screen and (max-width: 767px) {
     width: 100%;
-    @media screen and (max-width: 767px) {
-      align-items: center;
-    }
+    align-items: center;
   }
 `;
 
@@ -137,6 +135,10 @@ export const ContainerRightFooter = styled.div`
   flex-direction: column;
   height: 100%;
   align-items: center;
+
+  @media screen and (max-width: 767px) {
+    align-items: center;
+  }
 `;
 
 export const IconsFooter = styled.div`
@@ -160,13 +162,11 @@ export const Imorriscas = styled.img`
   height: 100px;
 
   @media screen and (max-width: 991px) {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
 
   @media screen and (max-width: 767px) {
-    width: 70px;
-    height: 70px;
     margin: 30px;
   }
 `;
