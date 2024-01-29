@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
@@ -28,7 +28,6 @@ import { Loading } from "../../components/loading/Loading";
 type Option = string;
 
 export const ContactMe: React.FC = () => {
-  // const contact = require("../../assets/contacto.mp4");
   const contactGif = require("../../assets/contacto.gif");
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [selectedOption, setSelectedOption] = useState<Option | null>(null);
@@ -48,6 +47,8 @@ export const ContactMe: React.FC = () => {
     "Arrendar",
     "Outros",
   ];
+
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   const tanks = require("../../assets/tanks.jpg");
 
@@ -140,9 +141,25 @@ export const ContactMe: React.FC = () => {
       return;
     }
 
-    // Restante do código se não houver erros
     await handleSubmit(e);
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   if (state.succeeded) {
     return (
@@ -170,7 +187,7 @@ export const ContactMe: React.FC = () => {
           <h1>Estou à sua espera</h1>
           <Form onSubmit={handleFormSubmit}>
             <CenterImage>
-              <FormContainer>
+              <FormContainer ref={dropdownRef}>
                 <InputContainer>
                   <ButtonOptions
                     id="options"
@@ -312,10 +329,6 @@ export const ContactMe: React.FC = () => {
                 </ToSend>
               </FormContainer>
               <VideoContainer>
-                {/* <Video controls autoPlay playsInline loop muted>
-                  <source src={contact} type="video/mp4" />
-                  Seu navegador não suporta a tag de vídeo.
-                </Video> */}
                 <Image src={contactGif} alt="Contacta-me" />
               </VideoContainer>
             </CenterImage>{" "}

@@ -26,7 +26,7 @@ export const HeaderContainer = styled.header`
   }
 `;
 
-export const LogoImage = styled.img`
+export const Logo = styled.img`
   width: 181px;
   height: 181px;
   pointer-events: none;

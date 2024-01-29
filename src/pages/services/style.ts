@@ -33,10 +33,7 @@ export const Image = styled.img`
   width: 451px;
   height: 349px;
   pointer-events: none;
-  &::-webkit-media-controls {
-    display: none !important;
-  }
-
+  margin: 50px;
   @media screen and (max-width: 576px) {
     width: 296px;
     height: 229px;

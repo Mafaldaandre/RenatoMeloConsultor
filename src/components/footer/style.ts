@@ -9,19 +9,30 @@ export const FooterContainer = styled.footer`
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
 
   @media screen and (max-width: 767px) {
-    height: 322px;
+    height: 415px;
     width: 100%;
     border-top: 2px solid #fff;
     background: #f8d15c;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 30px;
   }
-
   @media screen and (max-width: 350px) {
-    height: 380px;
+    height: 450px;
+  }
+`;
+
+export const ContainerOptions = styled.div`
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
   }
 `;
 
@@ -30,8 +41,7 @@ export const ImageFooter = styled.img`
   height: 140px;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 0px 48px 0px 39px;
-
+  margin-right: 40px;
   @media screen and (max-width: 991px) {
     width: 120px;
     height: 120px;
@@ -49,7 +59,7 @@ export const NavigationFooter = styled.div`
   width: 478px;
   gap: 12px 0px;
   flex-wrap: wrap;
-
+  align-content: space-around;
   @media screen and (max-width: 767px) {
     width: 352px;
     gap: 7px 0px;
@@ -103,15 +113,19 @@ export const OptionsFooter = styled(NavLink)`
   }
 `;
 
-export const IconsFooter = styled.div`
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: center;
+export const ContainerIcons = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 8%;
   align-items: center;
+  height: 80%;
+  justify-content: space-evenly;
+`;
+
+export const IconsFooter = styled.div`
+  display: flex;
+
   gap: 11px;
-  right: 0;
-  position: absolute;
-  margin-right: 38px;
 
   @media screen and (max-width: 767px) {
     position: inherit;
@@ -121,6 +135,28 @@ export const IconsFooter = styled.div`
 
   @media screen and (max-width: 350px) {
     padding: 20px;
+  }
+`;
+
+export const Imorriscas = styled.img`
+  width: 85%;
+
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 991px) {
+    width: 150%;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 180%;
+  }
+  @media screen and (max-width: 577px) {
+    width: 200%;
+  }
+  @media screen and (max-width: 577px) {
+    width: 370%;
   }
 `;
 
