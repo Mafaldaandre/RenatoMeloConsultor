@@ -49,7 +49,7 @@ export const ContentServicesBackground = styled.div<ContentProps>`
   position: relative;
   background-color: #eedda4;
   height: 100%;
-  padding: 54px 82px;
+  padding: 50px;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 

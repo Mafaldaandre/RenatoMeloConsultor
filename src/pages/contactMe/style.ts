@@ -264,7 +264,7 @@ export const TextArea = styled.textarea<InputContainerProps>`
   font-weight: 600;
   width: 100%;
   border-radius: 14px;
-  border: ${(props) => (props.hasfocus ? "2px solid ##f7d15b" : "none")};
+  border: ${(props) => (props.hasfocus ? "2px solid #f7d15b" : "none")};
   background-color: ${(props) =>
     props.hasfocus ? "#eedda4" : " rgb(240, 229, 215);"};
   min-height: 60px;
