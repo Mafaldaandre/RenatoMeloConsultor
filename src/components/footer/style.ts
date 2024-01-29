@@ -13,7 +13,7 @@ export const FooterContainer = styled.footer`
   padding: 0 50px;
 
   @media screen and (max-width: 767px) {
-    height: 415px;
+    height: 450px;
     width: 100%;
     border-top: 2px solid #fff;
     background: #f8d15c;
@@ -21,18 +21,25 @@ export const FooterContainer = styled.footer`
     flex-direction: column;
     align-items: center;
     padding-bottom: 30px;
+    padding: 0;
   }
   @media screen and (max-width: 350px) {
-    height: 450px;
+    height: 470px;
   }
 `;
 
 export const ContainerOptions = styled.div`
   display: flex;
+  width: 90%;
+
+  @media screen and (max-width: 1200px) {
+    width: 85%;
+  }
 
   @media screen and (max-width: 767px) {
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 `;
 
@@ -116,10 +123,16 @@ export const OptionsFooter = styled(NavLink)`
 export const ContainerIcons = styled.div`
   display: flex;
   flex-direction: column;
-  width: 8%;
+  width: 10%;
   align-items: center;
-  height: 80%;
+  height: 100%;
   justify-content: space-evenly;
+  @media screen and (max-width: 1200px) {
+    width: 15%;
+  }
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 `;
 
 export const IconsFooter = styled.div`
@@ -129,7 +142,7 @@ export const IconsFooter = styled.div`
 
   @media screen and (max-width: 767px) {
     position: inherit;
-    padding-top: 10px;
+
     margin-right: 0;
   }
 
@@ -139,24 +152,17 @@ export const IconsFooter = styled.div`
 `;
 
 export const Imorriscas = styled.img`
-  width: 85%;
-
-  @media screen and (max-width: 1200px) {
-    width: 100%;
-  }
+  width: 120px;
+  height: 120px;
 
   @media screen and (max-width: 991px) {
-    width: 150%;
+    width: 100px;
+    height: 100px;
   }
 
   @media screen and (max-width: 767px) {
-    width: 180%;
-  }
-  @media screen and (max-width: 577px) {
-    width: 200%;
-  }
-  @media screen and (max-width: 577px) {
-    width: 370%;
+    width: 70px;
+    height: 70px;
   }
 `;
 
