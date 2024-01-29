@@ -70,7 +70,6 @@ export const NavigationFooter = styled.div`
     width: 100%;
     gap: 7px 0px;
     align-items: center;
-    padding-bottom: 10px;
     flex-direction: column;
     flex-wrap: nowrap;
   }
