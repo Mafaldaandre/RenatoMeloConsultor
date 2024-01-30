@@ -61,6 +61,9 @@ export const CenterImage = styled.div<StyledComponentProps>`
 
 export const Title = styled.h1`
   padding-bottom: 0;
+  @media screen and (max-width: 767px) {
+    padding: 15px 15px 0 15px;
+  }
 `;
 
 export const ConteinerNoFavorites = styled.div`

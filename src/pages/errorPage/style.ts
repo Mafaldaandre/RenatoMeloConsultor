@@ -45,7 +45,6 @@ export const Link = styled(NavLink)`
   width: 215px;
   height: 60px;
   border-radius: 14px;
-
   background: #eee9e9;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
