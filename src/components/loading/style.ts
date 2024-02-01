@@ -11,9 +11,6 @@ export const LoadingContainer = styled.div`
   max-height: 100vh;
   display: flex;
   justify-content: center;
-  @media screen and (max-width: 577px) {
-    width: 90%;
-  }
 `;
 
 export const Image = styled.img`

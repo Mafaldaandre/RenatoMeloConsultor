@@ -2,10 +2,13 @@ import React, { useEffect, useState } from "react";
 import {
   AboutConsultant,
   BackgroundInitialPage,
+  ContactTitle,
+  ContainerContact,
   ContentInitialPage,
   ImageConsultant,
   LeftContent,
   MakeDream,
+  Phone,
   TextContentAbout,
   TextContentImage,
   Title,
@@ -59,6 +62,16 @@ export const InitialPage = () => {
             <TitleSmall>
               RENATO MELO - SEU PARCEIRO NO MUNDO IMOBILIÁRIO
             </TitleSmall>
+            <ContainerContact>
+              {" "}
+              <ContactTitle>Contacto</ContactTitle>
+              <Phone>
+                <span>Telemóvel: </span>926 649 600
+              </Phone>
+              <p>
+                <span>Email: </span>renato.melo@imorriscas.pt
+              </p>
+            </ContainerContact>
             <AboutConsultant className="aboutConsultant">
               Olá, sou um agente imobiliário dedicado e minha paixão é ajudar
               pessoas a encontrar a casa dos seus sonhos. Comprometo-me em
@@ -80,14 +93,6 @@ export const InitialPage = () => {
               conhecimento do mercado. Posso fornecer informações sobre bairros,
               escolas, comércio local e muito mais para ajudá-lo a tomar
               decisões informadas.
-            </AboutConsultant>
-            <AboutConsultant>
-              <span>Negociação Habilidosa: </span>Sou um negociador experiente e
-              sempre me esforço para obter o melhor negócio possível. Sua
-              satisfação é o meu objetivo final. Assistência Completa: Desde a
-              pesquisa até a assinatura do contrato, estou ao seu lado em todas
-              as etapas do processo. Respondo a todas as suas perguntas e
-              asseguro que esteja bem informado.
             </AboutConsultant>
           </TextContentImage>
         </ContentInitialPage>
@@ -105,6 +110,16 @@ export const InitialPage = () => {
             <TitleSmall>
               RENATO MELO - SEU PARCEIRO NO MUNDO IMOBILIÁRIO
             </TitleSmall>
+            <ContainerContact>
+              {" "}
+              <ContactTitle>Contacto</ContactTitle>
+              <Phone>
+                <span>Telemóvel: </span>926 649 600
+              </Phone>
+              <p>
+                <span>Email: </span>renato.melo@imorriscas.pt
+              </p>
+            </ContainerContact>
             <AboutConsultant className="aboutConsultant">
               Olá, sou um agente imobiliário dedicado e minha paixão é ajudar
               pessoas a encontrar a casa dos seus sonhos. Comprometo-me em
@@ -127,16 +142,16 @@ export const InitialPage = () => {
               escolas, comércio local e muito mais para ajudá-lo a tomar
               decisões informadas.
             </AboutConsultant>
-            <AboutConsultant>
-              <span>Negociação Habilidosa: </span>Sou um negociador experiente e
-              sempre me esforço para obter o melhor negócio possível. Sua
-              satisfação é o meu objetivo final.
-            </AboutConsultant>
           </TextContentAbout>
         </div>
       )}
 
       <LeftContent className={`leftContent ${isActive ? "active" : ""}`}>
+        <AboutConsultant>
+          <span>Negociação Habilidosa: </span>Sou um negociador experiente e
+          sempre me esforço para obter o melhor negócio possível. Sua satisfação
+          é o meu objetivo final.
+        </AboutConsultant>
         <AboutConsultant>
           <span> Assistência Completa: </span>Desde a pesquisa até a assinatura
           do contrato, estou ao seu lado em todas as etapas do processo.
@@ -151,13 +166,6 @@ export const InitialPage = () => {
           <span>Rede de Parceiros: </span>Trabalho com uma ampla rede de
           parceiros, incluindo consultores, advogados e empreiteiros, para
           garantir um processo leve e eficiente.
-        </AboutConsultant>
-        <AboutConsultant>
-          Se procura uma experiência imobiliária confiável e focada nos seus
-          interesses, entre em contato comigo para o número
-          <strong>926 649 600</strong> ou para o email
-          <strong>renato.melo@imorriscas.pt</strong>. Adoraria ser seu guia no
-          emocionante mundo do mercado imobiliário.
         </AboutConsultant>
       </LeftContent>
     </BackgroundInitialPage>

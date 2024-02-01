@@ -51,7 +51,7 @@ export const Link = styled(NavLink)`
   font-size: 18px;
   margin: 50px;
   cursor: pointer;
-  box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
   transition: transform 0.3s ease-in-out;
   display: flex;
   align-items: center;

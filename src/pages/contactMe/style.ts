@@ -200,7 +200,7 @@ export const Input = styled.input<InputContainerProps>`
   background-color: ${(props) =>
     props.hasfocus ? "#eedda4" : " rgb(240 , 229, 215);"};
   height: 60px;
-  box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
   outline: none;
   cursor: pointer;
   font-family: "Poppins", sans-serif;
@@ -268,7 +268,7 @@ export const TextArea = styled.textarea<InputContainerProps>`
   background-color: ${(props) =>
     props.hasfocus ? "#eedda4" : " rgb(240, 229, 215);"};
   min-height: 60px;
-  box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
   outline: none;
   font-size: 18px;
   cursor: pointer;
@@ -303,7 +303,7 @@ export const ButtonOptions = styled.div<InputContainerProps>`
   font-weight: 600;
   justify-content: space-between;
   cursor: pointer;
-  box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
   &:hover {
     background-color: #f8ecc6;
   }
@@ -325,7 +325,7 @@ export const OptionsContainer = styled.ul<InputContainerProps>`
   width: 100%;
   top: ${(props) => (props.haserror ? "78%" : "103%")};
   border: ${(props) => (props.haserror ? "1px solid #d14d4d" : "")};
-  box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
   background: rgb(240, 229, 215);
   z-index: 1;
 `;
@@ -364,7 +364,7 @@ export const ToSend = styled.button`
   display: inline-block;
   margin: 10px 0px 50px 0px;
   cursor: pointer;
-  box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
   transition: transform 0.3s ease-in-out;
 
   &:hover {
@@ -397,7 +397,7 @@ export const Link = styled(NavLink)`
   font-size: 18px;
   margin-bottom: 50px;
   cursor: pointer;
-  box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
   transition: transform 0.3s ease-in-out;
   display: flex;
   align-items: center;

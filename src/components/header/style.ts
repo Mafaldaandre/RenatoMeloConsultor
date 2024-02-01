@@ -84,7 +84,7 @@ export const Navigation = styled.nav<NavigationProps>`
 
   @media screen and (max-width: 577px) {
     display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
-    box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
     border: 2px solid #f7d15b;
     position: absolute;
     height: 233px;
@@ -134,7 +134,7 @@ export const MenuIcon = styled.div`
   @media screen and (max-width: 576px) {
     display: block;
     cursor: pointer;
-    box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
     border: 2px solid #f7d15b;
     border-radius: 10px;
     z-index: 1;

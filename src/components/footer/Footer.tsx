@@ -24,10 +24,11 @@ export const Footer = () => {
         <ImageFooter src={imo} alt="Parte do logo, predios em preto" />
         <NavigationFooter>
           <OptionsFooter to="/">Quem Sou</OptionsFooter>
-          <OptionsFooter to="/contactMe">Contacta-me</OptionsFooter>
           <OptionsFooter to="/services">Serviços</OptionsFooter>
-          <OptionsFooter to="/favorites">Favoritos</OptionsFooter>
           <OptionsFooter to="/housing">Imóveis</OptionsFooter>
+          <OptionsFooter to="/contactMe">Contacta-me</OptionsFooter>
+
+          <OptionsFooter to="/favorites">Favoritos</OptionsFooter>
         </NavigationFooter>
       </ContainerOptions>
       <ContainerIcons>

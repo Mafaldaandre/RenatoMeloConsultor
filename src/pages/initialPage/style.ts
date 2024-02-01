@@ -69,7 +69,7 @@ export const ImageConsultant = styled.img`
   flex-shrink: 0;
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
   transition-delay: 1s;
 
   @media screen and (max-width: 991px) {
@@ -150,6 +150,25 @@ export const TitleSmall = styled.h4`
   &.showMe {
     padding: 10px 0;
   }
+`;
+
+export const ContainerContact = styled.div`
+  background: #f8d15c;
+  width: 284px;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
+
+  @media screen and (max-width: 576px) {
+    width: 254px;
+  }
+`;
+
+export const ContactTitle = styled.h2``;
+
+export const Phone = styled.p`
+  padding: 5px 0;
 `;
 
 export const AboutConsultant = styled.p`

@@ -246,7 +246,7 @@ export const CloseIcon = styled(CloseOutlinedIcon)`
   position: absolute;
   top: 3%;
   color: #f7d15b;
-  box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
   z-index: 2;
   cursor: pointer;
 `;
@@ -256,7 +256,7 @@ export const NavigationButtonExpandeBack = styled(ArrowBackIosRoundedIcon)`
   cursor: pointer;
   color: #f7d15b;
   margin-left: 100px;
-  box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
   @media screen and (max-width: 1200px) {
     margin: 0 50px;
   }
@@ -275,7 +275,7 @@ export const NavigationButtonExpandeForward = styled(
   z-index: 2;
   cursor: pointer;
   color: #f7d15b;
-  box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
 
   @media screen and (max-width: 1200px) {
     margin: 0 50px;
@@ -362,7 +362,7 @@ export const Counter = styled.div`
   background-color: transparent;
   justify-content: center;
   padding: 15px;
-  box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
   border-radius: 50px;
   width: 130px;
   margin-bottom: 50px;
@@ -383,7 +383,7 @@ export const CounterExpande = styled.div`
   background-color: transparent;
   justify-content: center;
   padding: 15px;
-  box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
   border-radius: 50px;
   width: 130px;
   margin-bottom: 50px;
@@ -412,7 +412,7 @@ export const Back = styled(NavLink)`
   font-size: 18px;
   margin-bottom: 50px;
   cursor: pointer;
-  box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
   transition: transform 0.3s ease-in-out;
   display: flex;
   align-items: center;

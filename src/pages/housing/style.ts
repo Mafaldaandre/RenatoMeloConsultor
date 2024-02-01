@@ -120,7 +120,7 @@ export const Card = styled.div`
   z-index: 2;
   display: flex;
   flex-direction: column;
-  filter: drop-shadow(3px 7px 10px rgba(0, 0, 0, 0.5));
+  box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
   border-radius: 20px 20px 0px 0px;
   margin: 50px 42px;
   transition: transform 0.3s ease-in-out;
@@ -152,7 +152,7 @@ export const Card = styled.div`
 
   @media screen and (max-width: 576px) {
     width: 300px;
-    height: 420px;
+    height: 465px;
     margin: 50px;
   }
 `;
