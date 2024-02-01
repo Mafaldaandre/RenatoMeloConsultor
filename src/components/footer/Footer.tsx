@@ -19,7 +19,6 @@ export const Footer = () => {
   const imorriscas = require("../../assets/logoImorriscas.png");
 
   const handleLinkClick = () => {
-    // Rolar para o topo da página
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -40,7 +39,6 @@ export const Footer = () => {
           <OptionsFooter to="/contactMe" onClick={handleLinkClick}>
             Contacta-me
           </OptionsFooter>
-
           <OptionsFooter to="/favorites" onClick={handleLinkClick}>
             Favoritos
           </OptionsFooter>
@@ -50,7 +48,6 @@ export const Footer = () => {
         {" "}
         <ContainerRightFooter>
           <Imorriscas src={imorriscas} alt="Logo imorriscas" />
-
           <IconsFooter>
             <IconWithTransition
               href="https://www.facebook.com/profile.php?id=61552064212594"

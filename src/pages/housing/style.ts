@@ -161,6 +161,7 @@ export const ContentHouses = styled(NavLink)`
   background: #d9d9d9;
   text-decoration: none;
   color: inherit;
+  min-height: 219px;
 `;
 
 export const TitleCard = styled.h3`
