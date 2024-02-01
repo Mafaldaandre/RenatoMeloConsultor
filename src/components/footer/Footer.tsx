@@ -18,17 +18,32 @@ export const Footer = () => {
   const imo = require("../../assets/imobiliario.jpg");
   const imorriscas = require("../../assets/logoImorriscas.png");
 
+  const handleLinkClick = () => {
+    // Rolar para o topo da página
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <FooterContainer>
       <ContainerOptions>
         <ImageFooter src={imo} alt="Parte do logo, predios em preto" />
         <NavigationFooter>
-          <OptionsFooter to="/">Quem Sou</OptionsFooter>
-          <OptionsFooter to="/services">Serviços</OptionsFooter>
-          <OptionsFooter to="/housing">Imóveis</OptionsFooter>
-          <OptionsFooter to="/contactMe">Contacta-me</OptionsFooter>
+          <OptionsFooter to="/" onClick={handleLinkClick}>
+            Quem Sou
+          </OptionsFooter>
+          <OptionsFooter to="/services" onClick={handleLinkClick}>
+            Serviços
+          </OptionsFooter>
+          <OptionsFooter to="/housing" onClick={handleLinkClick}>
+            Imóveis
+          </OptionsFooter>
+          <OptionsFooter to="/contactMe" onClick={handleLinkClick}>
+            Contacta-me
+          </OptionsFooter>
 
-          <OptionsFooter to="/favorites">Favoritos</OptionsFooter>
+          <OptionsFooter to="/favorites" onClick={handleLinkClick}>
+            Favoritos
+          </OptionsFooter>
         </NavigationFooter>
       </ContainerOptions>
       <ContainerIcons>
