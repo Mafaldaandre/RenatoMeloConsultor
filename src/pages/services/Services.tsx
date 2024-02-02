@@ -8,7 +8,6 @@ import {
   ContentServicesBackground,
   Image,
 } from "./style";
-import { ContactTitle } from "../initialPage/style";
 
 export const Services: React.FC = () => {
   const marketAnalysis = require("../../assets/analiseMercado.gif");
