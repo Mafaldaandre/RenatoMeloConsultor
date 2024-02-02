@@ -11,6 +11,9 @@ export const Background = styled.div`
   background: #f8ecc6;
   margin-top: 5%;
   margin-bottom: 5%;
+  @media screen and (min-width: 1900px) {
+    width: 80%;
+  }
 
   @media screen and (max-width: 767px) {
     border-radius: 30px;
@@ -21,12 +24,23 @@ export const Background = styled.div`
   }
 `;
 
+export const ContainerTitleHousesDetails = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+`;
+
 export const Title = styled.h1`
   padding-bottom: 50px;
+  background: #f8d15c;
+  width: 972px;
+  padding: 20px;
+  margin: 50px;
+  box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
 
   @media screen and (max-width: 767px) {
-    padding-left: 20px;
-    padding-right: 20px;
+    margin: 30px;
   }
 `;
 
@@ -166,7 +180,7 @@ export const TypePrice = styled.p`
 `;
 
 export const ContainerDivisions = styled.div`
-  background: url(${require("../../assets/imageBackground.png")});
+  background: #f7d15b;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 60px;
@@ -246,7 +260,7 @@ export const CloseIcon = styled(CloseOutlinedIcon)`
   position: absolute;
   top: 3%;
   color: #f7d15b;
-  box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
+  box-shadow: 1px 2px 5px 0px rgb(53 51 43);
   z-index: 2;
   cursor: pointer;
 `;
@@ -256,7 +270,7 @@ export const NavigationButtonExpandeBack = styled(ArrowBackIosRoundedIcon)`
   cursor: pointer;
   color: #f7d15b;
   margin-left: 100px;
-  box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
+  box-shadow: 1px 2px 5px 0px rgb(53 51 43);
   @media screen and (max-width: 1200px) {
     margin: 0 50px;
   }
@@ -275,7 +289,7 @@ export const NavigationButtonExpandeForward = styled(
   z-index: 2;
   cursor: pointer;
   color: #f7d15b;
-  box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
+  box-shadow: 1px 2px 5px 0px rgb(53 51 43);
 
   @media screen and (max-width: 1200px) {
     margin: 0 50px;
@@ -359,7 +373,7 @@ export const Counter = styled.div`
   font-size: 24px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  background-color: transparent;
+  background-color: #f7d15b;
   justify-content: center;
   padding: 15px;
   box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
@@ -383,7 +397,7 @@ export const CounterExpande = styled.div`
   background-color: transparent;
   justify-content: center;
   padding: 15px;
-  box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
+  box-shadow: 1px 2px 5px 0px rgb(53 51 43);
   border-radius: 50px;
   width: 130px;
   margin-bottom: 50px;
@@ -406,7 +420,7 @@ export const Back = styled(NavLink)`
   width: 215px;
   height: 60px;
   border-radius: 14px;
-  background-color: #eedda4;
+  background-color: #f7d15b;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 18px;

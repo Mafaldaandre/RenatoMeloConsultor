@@ -5,6 +5,7 @@ import {
   Card,
   CardContainer,
   CenterImage,
+  ContainerTitleFavorites,
   ContentHouses,
   HeartIcon,
   IconLocalization,
@@ -39,7 +40,11 @@ export const Housing = () => {
   return (
     <>
       <Background>
-        <Title>Encontre a sua casa de SONHO!</Title>
+        <ContainerTitleFavorites>
+          {" "}
+          <Title>Encontre a sua casa de SONHO!</Title>
+        </ContainerTitleFavorites>
+
         <CardContainer numberCards={numberCards}>
           {" "}
           {cards.map((card) => (

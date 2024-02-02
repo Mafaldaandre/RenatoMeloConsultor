@@ -18,6 +18,9 @@ export const Background = styled.div<StyledComponentProps>`
   position: relative;
   padding-bottom: ${(props) => (props.dontFavorites ? "50px" : "")};
   min-height: ${(props) => (props.dontFavorites ? "" : "100vh")};
+  @media screen and (min-width: 1900px) {
+    width: 80%;
+  }
 
   @media screen and (max-width: 991px) {
     padding-bottom: ${(props) => (props.dontFavorites ? "0" : "")};
@@ -28,7 +31,7 @@ export const Background = styled.div<StyledComponentProps>`
   }
 
   @media screen and (max-width: 565px) {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
 
   @media screen and (max-width: 375px) {
@@ -45,9 +48,8 @@ export const CenterImage = styled.div<StyledComponentProps>`
   background-color: #eedda4;
   height: 675px;
   margin: 0;
-  top: 50%;
   transform: translate(0, -50%);
-  top: ${(props) => (props.dontFavorites ? "56%" : "50%")};
+  top: ${(props) => (props.dontFavorites ? "58%" : "50%")};
   min-height: ${(props) => (props.dontFavorites ? "" : "100vh")};
 
   @media screen and (max-width: 991px) {
@@ -60,9 +62,14 @@ export const CenterImage = styled.div<StyledComponentProps>`
 `;
 
 export const Title = styled.h1`
-  padding-bottom: 0;
+  background: #f8d15c;
+  width: 610px;
+  padding: 20px;
+  margin: 50px;
+  box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
+
   @media screen and (max-width: 767px) {
-    padding: 15px 15px 0 15px;
+    margin: 30px;
   }
 `;
 
@@ -136,12 +143,12 @@ export const Card = styled.div`
 
   @media screen and (max-width: 991px) {
     width: 400px;
-    height: 553px;
+    height: 565px;
   }
 
   @media screen and (max-width: 767px) {
     width: 400px;
-    height: 553px;
+    height: 565px;
     padding: 0;
     margin: 30px;
     transition: none;
@@ -152,13 +159,12 @@ export const Card = styled.div`
 
   @media screen and (max-width: 576px) {
     width: 300px;
-    height: 465px;
-    margin: 50px;
+    height: 478px;
   }
 `;
 
 export const ContentHouses = styled(NavLink)`
-  background: #d9d9d9;
+  background: #f2ecd7;
   text-decoration: none;
   color: inherit;
   min-height: 219px;
@@ -263,4 +269,21 @@ export const IconsContainer = styled.div<StyledComponentProps>`
       : css`
           justify-content: center;
         `};
+`;
+
+export const ContainerTitleFavorites = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+`;
+export const TitleFavorites = styled.h1`
+  background: #f8d15c;
+  width: 422px;
+  padding: 20px;
+  box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
+  margin: 50px;
+  @media screen and (max-width: 767px) {
+    margin: 30px;
+  }
 `;

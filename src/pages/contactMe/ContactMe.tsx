@@ -8,6 +8,7 @@ import {
   ButtonOptions,
   CenterImage,
   CenterImageTanks,
+  ContainerTitleContact,
   ErrorMessage,
   Form,
   FormContainer,
@@ -20,6 +21,7 @@ import {
   OptionsContainer,
   TextArea,
   Title,
+  TitleContact,
   ToSend,
   VideoContainer,
 } from "./style";
@@ -184,7 +186,9 @@ export const ContactMe: React.FC = () => {
       {!state.submitting && (
         <div>
           {" "}
-          <h1>Estou à sua espera</h1>
+          <ContainerTitleContact>
+            <TitleContact>Estou à sua espera</TitleContact>
+          </ContainerTitleContact>
           <Form onSubmit={handleFormSubmit}>
             <CenterImage>
               <FormContainer ref={dropdownRef}>

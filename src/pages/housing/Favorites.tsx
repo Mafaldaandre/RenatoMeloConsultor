@@ -7,6 +7,7 @@ import {
   Card,
   CardContainer,
   CenterImage,
+  ContainerTitleFavorites,
   ConteinerNoFavorites,
   ContentHouses,
   HeartIcon,
@@ -17,6 +18,7 @@ import {
   PriceContainer,
   TitleAndLocalization,
   TitleCard,
+  TitleFavorites,
   Type,
   VideoFavorites,
 } from "./style";
@@ -40,7 +42,10 @@ export const Favorites: React.FC = () => {
   console.log(favorites);
   return (
     <Background dontFavorites={dontFavorites}>
-      <h1>Favoritos</h1>
+      <ContainerTitleFavorites>
+        <TitleFavorites>Favoritos</TitleFavorites>
+      </ContainerTitleFavorites>
+
       {loading ? (
         <Loading />
       ) : Object.values(favorites).length === 0 ? (

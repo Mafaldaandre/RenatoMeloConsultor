@@ -1,11 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
 import {
   BackgroundServices,
+  Container,
   ContainerServices,
+  ContainerTitle,
   ContentServices,
   ContentServicesBackground,
   Image,
 } from "./style";
+import { ContactTitle } from "../initialPage/style";
 
 export const Services: React.FC = () => {
   const marketAnalysis = require("../../assets/analiseMercado.gif");
@@ -59,9 +62,12 @@ export const Services: React.FC = () => {
           visible={true}
         >
           <Image src={marketAnalysis} alt="Análise de Mercado" />
-          <div>
-            <h2>ANÁLISE DE MERCADO</h2>
-            <h2>GRÁTIS</h2>
+          <Container>
+            <ContainerTitle>
+              <h2>ANÁLISE DE MERCADO</h2>
+              <h2>GRÁTIS</h2>
+            </ContainerTitle>
+
             <p>
               Estabelecer o preço correto ao listar uma propriedade no mercado é
               uma etapa fundamental. Irei realizar uma análise comparativa dos
@@ -70,21 +76,25 @@ export const Services: React.FC = () => {
               Posteriormente, colaboraremos juntos para definir o valor ideal
               para iniciar a promoção, sem nenhum custo associado.
             </p>
-          </div>
+          </Container>
         </ContentServicesBackground>
         <ContentServices
           ref={(el) => (divRefs.current[1] = el)}
           visible={visibleDivs[1]}
         >
-          <div>
-            <h2>FOTOGRAFIA / VÍDEO</h2>
-            <h2>GRÁTIS</h2>
+          <Container>
+            <ContainerTitle>
+              {" "}
+              <h2>FOTOGRAFIA / VÍDEO</h2>
+              <h2>GRÁTIS</h2>
+            </ContainerTitle>
+
             <p>
               Realizar uma reportagem fotográfica profissional ou vídeo, na
               promoção de um imóvel, é fundamental. Pretende-se que este se
               destaque dos demais e que seja valorizado.
             </p>
-          </div>
+          </Container>
 
           <Image src={photography} alt="Fotografia/Video" />
         </ContentServices>
@@ -93,22 +103,30 @@ export const Services: React.FC = () => {
           visible={visibleDivs[2]}
         >
           <Image src={energyCertificate} alt="Certificado Energético" />
-          <div>
-            <h2>CERTIFICAÇÃO ENERGÉTICA</h2>
-            <h2>CUSTO VARIÁVEL</h2>
+          <Container>
+            <ContainerTitle>
+              {" "}
+              <h2>CERTIFICAÇÃO ENERGÉTICA</h2>
+              <h2>CUSTO VARIÁVEL</h2>
+            </ContainerTitle>
+
             <p>
               A obtenção do Certificado Energético é obrigatória e o seu custo
               varia de acordo com a tipologia e natureza do imóvel.
             </p>
-          </div>
+          </Container>
         </ContentServicesBackground>
         <ContentServices
           ref={(el) => (divRefs.current[3] = el)}
           visible={visibleDivs[3]}
         >
-          <div>
-            <h2>FINANCIAMENTO BANCÁRIO</h2>
-            <h2>GRÁTIS</h2>
+          <Container>
+            <ContainerTitle>
+              {" "}
+              <h2>FINANCIAMENTO BANCÁRIO</h2>
+              <h2>GRÁTIS</h2>
+            </ContainerTitle>
+
             <p>
               Descobrir a instituição bancária que oferece a melhor opção de
               financiamento pode ser desafiador. É por isso que colaboro com um
@@ -116,7 +134,7 @@ export const Services: React.FC = () => {
               várias opções disponíveis, você poderá decidir qual banco se
               ajusta melhor ao seu perfil, sem incorrer em custos adicionais.
             </p>
-          </div>
+          </Container>
 
           <Image src={bankcredit} alt="Crédito Bancário" />
         </ContentServices>

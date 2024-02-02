@@ -11,7 +11,6 @@ body {
   height: 100vh;
   background-color: rgb(240, 229, 215);
   overflow: scroll;
-
 }
 
 body::-webkit-scrollbar { 
@@ -23,34 +22,40 @@ h1 {
   font-family: 'Istok Web', sans-serif;
   text-align: center;
   padding-top: 50px;
+color:black;
 }
 
 h2 {
   font-size: 24px;
   font-family: 'Istok Web', sans-serif;
+color:black;
 }
 
 h4 {
   font-size: 18px;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
+color:black;
 }
 
 label {
   font-size: 18px;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
+color:black;
 }
 
 span {
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
+color:black;
 }
 
 p {
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
+
 }
 
 h1, h2, h4, label,span, p {

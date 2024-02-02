@@ -1,4 +1,7 @@
 import styled from "styled-components";
+interface PropsSmallContainer {
+  smallContainer?: boolean;
+}
 
 export const BackgroundInitialPage = styled.div`
   width: 90%;
@@ -7,6 +10,10 @@ export const BackgroundInitialPage = styled.div`
   background: #f8ecc6;
   margin-top: 5%;
   margin-bottom: 5%;
+
+  @media screen and (min-width: 1900px) {
+    width: 80%;
+  }
 
   @media screen and (max-width: 767px) {
     border-radius: 30px;
@@ -29,7 +36,7 @@ export const MakeDream = styled.div`
 `;
 
 export const Title = styled.h2`
-  color: #000;
+  color: black;
   text-align: center;
   max-width: 100%;
   padding: 50px 163px;
@@ -47,12 +54,17 @@ export const Title = styled.h2`
   }
 `;
 
-export const LeftContent = styled.div`
+export const LeftContent = styled.div<PropsSmallContainer>`
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
   transition-delay: 1.5s;
-  padding: 0 50px 50px 50px;
+  padding: ${(props) =>
+    props.smallContainer ? "30px 50px 50px 50px" : "0 50px 50px 50px;"};
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: ${(props) => (props.smallContainer ? "space-around" : "")};
   &.active {
     opacity: 1;
     transform: translateY(0);
@@ -61,6 +73,30 @@ export const LeftContent = styled.div`
   @media screen and (max-width: 767px) {
     padding: 0 30px 30px 30px;
   }
+`;
+
+export const ChosseMeSpan = styled.span`
+  background: #f8d15c;
+  width: 284px;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px 10px 0 0;
+  padding: 0 20px;
+  span {
+    font-size: 26px;
+    font-weight: normal;
+  }
+`;
+
+export const ChosseMe = styled.button`
+  border: none;
+  width: 284px;
+  min-height: 50px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
 `;
 
 export const ImageConsultant = styled.img`
@@ -96,12 +132,12 @@ export const TextContentAbout = styled.div`
   display: flex;
 
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
 
-  padding: 20px 50px 0 50px;
+  padding: 50px;
 
   @media screen and (max-width: 767px) {
-    padding: 20px 30px 0 30px;
+    padding: 30px;
   }
 `;
 
@@ -145,20 +181,25 @@ export const ContentInitialPage = styled.div`
   }
 `;
 
-export const TitleSmall = styled.h4`
-  color: #000;
+export const TitleSmall = styled.h4<PropsSmallContainer>`
+  color: black;
+  text-align: ${(props) => (props.smallContainer ? "center" : "")};
+  padding-left: ${(props) => (props.smallContainer ? "" : "20px")};
   &.showMe {
     padding: 10px 0;
   }
 `;
 
-export const ContainerContact = styled.div`
+export const ContainerContact = styled.div<PropsSmallContainer>`
   background: #f8d15c;
   width: 284px;
   padding: 20px;
-  margin: 20px 0;
-  border-radius: 10px;
+
   box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
+  margin: ${(props) => (props.smallContainer ? " 50px" : "20px")};
+  @media screen and (max-width: 767px) {
+    margin: 30px;
+  }
 
   @media screen and (max-width: 576px) {
     width: 254px;
@@ -171,10 +212,9 @@ export const Phone = styled.p`
   padding: 5px 0;
 `;
 
-export const AboutConsultant = styled.p`
-  padding: 10px 0;
-  &.aboutConsultant {
-  }
+export const AboutConsultant = styled.p<PropsSmallContainer>`
+  background-color: ${(props) => (props.smallContainer ? " #f9e093a3;" : "")};
+  padding: 20px;
 `;
 
 export const Span = styled.span`

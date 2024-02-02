@@ -11,6 +11,7 @@ import {
   ContainerBack,
   ContainerDivisions,
   ContainerPrice,
+  ContainerTitleHousesDetails,
   ConteinerThumbnail,
   Counter,
   CounterExpande,
@@ -282,29 +283,15 @@ export const HousingDetails: React.FC<DetailsProps> = () => {
       );
     }
 
-    // Adicionar slide invisível apenas se necessário
-    // if (totalSlides % 2 !== 0 && numVisibleImages === 1) {
-    //   slides.push(
-    //     <Slide
-    //       key="invisible"
-    //       style={{ visibility: "hidden" }}
-    //       onClick={() => {
-    //         openImage(0);
-    //       }}
-    //     >
-    //       {detailsHouses?.images[0] && (
-    //         <img src={detailsHouses?.images[0].image} alt={`Invisible Slide`} />
-    //       )}
-    //     </Slide>
-    //   );
-    // }
-
     return slides;
   };
 
   return (
     <Background>
-      <Title>{detailsHouses && detailsHouses.title}</Title>
+      <ContainerTitleHousesDetails>
+        <Title>{detailsHouses && detailsHouses.title}</Title>
+      </ContainerTitleHousesDetails>
+
       <CenterImage>
         <CarouselContainer
           onTouchStart={isMobileScreen ? handleTouchStart : undefined}

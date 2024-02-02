@@ -102,7 +102,7 @@ export const Navigation = styled.nav<NavigationProps>`
 export const Options = styled(NavLink)`
   text-decoration: none;
   color: black;
-  color: #000;
+
   font-size: 24px;
   font-family: "Istok Web", sans-serif;
   text-align: center;

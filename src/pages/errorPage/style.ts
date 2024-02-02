@@ -16,6 +16,10 @@ export const Background = styled.div`
   align-items: center;
   justify-content: center;
 
+  @media screen and (min-width: 1900px) {
+    width: 80%;
+  }
+
   padding: 50px;
   @media screen and (max-width: 767px) {
     border-radius: 30px;

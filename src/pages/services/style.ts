@@ -34,6 +34,10 @@ export const Image = styled.img`
   height: 349px;
   pointer-events: none;
   margin: 50px;
+
+  @media screen and (max-width: 1200px) {
+    margin: 50px 0;
+  }
   @media screen and (max-width: 576px) {
     width: 296px;
     height: 229px;
@@ -90,5 +94,27 @@ export const ContentServices = styled.div<ContentProps>`
 
   @media screen and (max-width: 767px) {
     padding: 30px;
+  }
+`;
+
+export const ContainerTitle = styled.div`
+  background: #f8d15c;
+  width: 386px;
+  padding: 20px;
+  box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (max-width: 576px) {
+    width: 300px;
+  }
+`;
+
+export const Container = styled.div`
+  @media screen and (max-width: 576px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 `;

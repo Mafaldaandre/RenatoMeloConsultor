@@ -10,7 +10,15 @@ export const FooterContainer = styled.footer`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0 50px;
+  padding: 0 75px;
+
+  @media screen and (min-width: 1900px) {
+    padding: 0 150px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 0 50px;
+  }
 
   @media screen and (max-width: 767px) {
     height: 510px;
@@ -24,17 +32,6 @@ export const FooterContainer = styled.footer`
   }
   @media screen and (max-width: 350px) {
     height: 500px;
-  }
-`;
-
-export const ContainerOptions = styled.div`
-  display: flex;
-  width: 85%;
-
-  @media screen and (max-width: 767px) {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
   }
 `;
 
@@ -59,12 +56,15 @@ export const ImageFooter = styled.img`
 export const NavigationFooter = styled.div`
   display: flex;
   width: 478px;
-  gap: 12px 0px;
+  gap: 25px 0px;
   flex-wrap: wrap;
-  align-content: space-around;
+  justify-content: space-between;
+  @media screen and (max-width: 767px) {
+    gap: 12px 0px;
+  }
   @media screen and (max-width: 767px) {
     width: 100%;
-    gap: 7px 0px;
+    gap: 10px 0px;
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -73,7 +73,7 @@ export const NavigationFooter = styled.div`
 
 export const OptionsFooter = styled(NavLink)`
   text-decoration: none;
-  color: #000;
+  color: black;
   width: 194px;
   text-align: left;
   transition: transform 0.7s ease-in-out;
@@ -90,6 +90,7 @@ export const OptionsFooter = styled(NavLink)`
 
   @media screen and (max-width: 991px) {
     font-size: 22px;
+    width: 155px;
   }
 
   @media screen and (max-width: 767px) {
@@ -110,22 +111,6 @@ export const OptionsFooter = styled(NavLink)`
     font-size: 17px;
     width: 100%;
     text-align: center;
-  }
-`;
-
-export const ContainerIcons = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 20%;
-  align-items: flex-end;
-  height: 100%;
-
-  @media screen and (max-width: 1200px) {
-    width: 15%;
-  }
-  @media screen and (max-width: 767px) {
-    width: 100%;
-    align-items: center;
   }
 `;
 

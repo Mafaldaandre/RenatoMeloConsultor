@@ -19,6 +19,9 @@ export const BackgroundTanks = styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
+  @media screen and (min-width: 1900px) {
+    width: 80%;
+  }
   @media screen and (max-width: 767px) {
     border-radius: 30px;
   }
@@ -160,16 +163,6 @@ export const VideoContainer = styled.div`
     padding-top: 30px;
   }
 `;
-
-// export const Video = styled.video`
-//   pointer-events: none;
-//   &::-webkit-media-controls {
-//     display: none !important;
-//   }
-//   @media screen and (max-width: 991px) {
-//     width: 27%;
-//   }
-// `;
 
 export const Image = styled.img`
   width: 80%;
@@ -356,7 +349,7 @@ export const ToSend = styled.button`
   height: 60px;
   border-radius: 14px;
   border: none;
-  background: rgb(240, 229, 215);
+  background: #f8d15c;
 
   font-size: 18px;
   font-family: "Poppins", sans-serif;
@@ -391,7 +384,7 @@ export const Link = styled(NavLink)`
   width: 215px;
   height: 60px;
   border-radius: 14px;
-  background-color: #eedda4;
+  background-color: #f8d15c;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 18px;
@@ -422,4 +415,18 @@ export const Link = styled(NavLink)`
     width: 145px;
     height: 50px;
   }
+`;
+
+export const ContainerTitleContact = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+`;
+export const TitleContact = styled.h1`
+  background: #f8d15c;
+  width: 422px;
+  padding: 20px;
+  box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
+  margin-top: 50px;
 `;
