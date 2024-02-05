@@ -160,7 +160,18 @@ export const NavigationButtonForwardThumbnail = styled(
 export const RefNumber = styled.p`
   font-weight: 700;
   text-align: center;
-  padding: 50px 0;
+  background-color: #f9e093a3;
+  padding: 20px;
+  width: 200px;
+  margin: 50px 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 767px) {
+    margin: 30px 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 export const Localization = styled.p`
@@ -169,9 +180,19 @@ export const Localization = styled.p`
 
 export const ContainerPrice = styled.div`
   display: flex;
-  width: 100%;
-  padding: 50px 0;
   justify-content: center;
+  background-color: #f9e093a3;
+  padding: 20px;
+  width: 200px;
+  margin: 50px 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 767px) {
+    margin: 30px 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 export const TypePrice = styled.p`
@@ -181,15 +202,13 @@ export const TypePrice = styled.p`
 
 export const ContainerDivisions = styled.div`
   background: #f7d15b;
-  background-size: cover;
-  background-repeat: no-repeat;
   border-radius: 60px;
   display: flex;
   justify-content: space-around;
   margin: 0 140px;
   padding: 40px 0;
   align-items: center;
-
+  box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
   @media screen and (max-width: 991px) {
     margin: 0 80px;
   }

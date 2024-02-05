@@ -66,12 +66,12 @@ export const ContentServicesBackground = styled.div<ContentProps>`
   @media screen and (max-width: 991px) {
     flex-direction: column;
     padding: 50px;
-    width: 112%;
-    left: -6%;
+    width: 110%;
+    left: -5%;
   }
   @media screen and (max-width: 767px) {
     border-radius: 30px;
-    padding: 30px;
+    padding: 30px 50px;
   }
 `;
 

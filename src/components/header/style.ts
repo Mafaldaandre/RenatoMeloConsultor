@@ -123,6 +123,7 @@ export const Options = styled(NavLink)`
   @media screen and (max-width: 767px) {
     transition: none;
     &:hover {
+      color: black;
       transform: none;
     }
   }
@@ -138,6 +139,7 @@ export const MenuIcon = styled.div`
     border: 2px solid #f7d15b;
     border-radius: 10px;
     z-index: 1;
+    margin-bottom: 5px;
   }
 `;
 

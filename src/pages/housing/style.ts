@@ -168,6 +168,7 @@ export const ContentHouses = styled(NavLink)`
   text-decoration: none;
   color: inherit;
   min-height: 219px;
+  padding: 10px 0;
 `;
 
 export const TitleCard = styled.h3`
@@ -179,6 +180,7 @@ export const TitleAndLocalization = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+  padding: 5px 0;
 `;
 
 export const IconLocalization = styled.img`
@@ -192,7 +194,7 @@ export const Localization = styled.p`
 export const PriceContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 15px 20px;
+  padding: 5px 20px;
 `;
 
 export const Type = styled.p`
@@ -258,7 +260,7 @@ export const IconsContainer = styled.div<StyledComponentProps>`
   display: flex;
   width: 100%;
   text-align: center;
-  padding: 0px 20px 15px 20px;
+  padding: 0px 20px;
   align-items: center;
 
   ${(props) =>

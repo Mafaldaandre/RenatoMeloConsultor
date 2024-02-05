@@ -99,6 +99,7 @@ export const OptionsFooter = styled(NavLink)`
     transition: none;
     text-align: center;
     &:hover {
+      color: black;
       transform: none;
     }
   }
@@ -170,6 +171,7 @@ export const IconWithTransition = styled.a`
   @media screen and (max-width: 767px) {
     transition: none;
     &:hover {
+      color: black;
       transform: none;
     }
   }
