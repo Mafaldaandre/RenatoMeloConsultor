@@ -2,87 +2,45 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
 interface NavigationProps {
-  isOpen: boolean;
+  isOpen?: boolean;
 }
 
 export const HeaderContainer = styled.header`
   display: flex;
   width: 100%;
-  height: 250px;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 8px;
+  height: 200px;
+  justify-content: center;
   border-bottom: 2px solid #fff;
   background: #f7d15b;
 
-  @media screen and (max-width: 767px) {
-    height: 212px;
-  }
-
-  @media screen and (max-width: 577px) {
+  @media screen and (max-width: 800px) {
     height: 274px;
     justify-content: space-evenly;
   }
 `;
 
 export const Logo = styled.img`
-  width: 181px;
-  height: 181px;
-  pointer-events: none;
-  &::-webkit-media-controls {
-    display: none !important;
-  }
+  width: 200px;
+  height: auto;
+  border: 4px solid black;
 
-  @media screen and (max-width: 991px) {
-    width: 160px;
-    height: 160px;
-  }
-
-  @media screen and (max-width: 767px) {
-    width: 130px;
-    height: 130px;
+  @media screen and (max-width: 800px) {
+    padding-bottom: 20px;
+    border: none;
   }
 `;
 
-// export const LogoVideo = styled.video`
-//   width: 181px;
-//   height: 181px;
-//   pointer-events: none;
-//   &::-webkit-media-controls {
-//     display: none !important;
-//   }
-
-//   @media screen and (max-width: 991px) {
-//     width: 160px;
-//     height: 160px;
-//   }
-
-//   @media screen and (max-width: 767px) {
-//     width: 130px;
-//     height: 130px;
-//   }
-// `;
-
 export const Navigation = styled.nav<NavigationProps>`
   display: flex;
-  width: 969px;
-  height: 49px;
+  align-items: center;
   justify-content: center;
-  align-items: flex-start;
-  gap: 80px;
-  flex-shrink: 0;
-
-  @media screen and (max-width: 991px) {
-    width: 646px;
-  }
+  gap: 40px;
 
   @media screen and (max-width: 767px) {
-    width: 541px;
-    gap: 45px;
+    gap: 35px;
   }
 
-  @media screen and (max-width: 577px) {
+  @media screen and (max-width: 750px) {
     display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
     box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
     border: 2px solid #f7d15b;
@@ -99,27 +57,25 @@ export const Navigation = styled.nav<NavigationProps>`
   }
 `;
 
-export const Options = styled(NavLink)`
+export const Options = styled(NavLink)<NavigationProps>`
+  display: ${({ isOpen }) => (isOpen ? "none" : "flex")};
   text-decoration: none;
   color: black;
 
-  font-size: 24px;
+  font-size: 22px;
   font-family: "Istok Web", sans-serif;
   text-align: center;
   font-weight: 600;
   transition: transform 0.7s ease-in-out;
   &:hover {
-    color: white;
     transform: scale(1.05);
   }
   &.active {
-    color: white;
+    background-color: black;
+    color: #f7d15b;
+    padding: 10px;
+    border-radius: 5px;
   }
-
-  @media screen and (max-width: 991px) {
-    font-size: 22px;
-  }
-
   @media screen and (max-width: 767px) {
     transition: none;
     &:hover {
@@ -129,17 +85,33 @@ export const Options = styled(NavLink)`
   }
 `;
 
+export const OptionsImage = styled(NavLink)<NavigationProps>`
+  display: ${({ isOpen }) => (isOpen ? "none" : "flex")};
+  text-decoration: none;
+`;
+
+export const ContainerMenu = styled.div`
+  display: none;
+
+  @media screen and (max-width: 750px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+`;
+
 export const MenuIcon = styled.div`
   display: none;
 
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 750px) {
     display: block;
     cursor: pointer;
     box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
     border: 2px solid #f7d15b;
     border-radius: 10px;
     z-index: 1;
-    margin-bottom: 5px;
+    margin-bottom: 35px;
   }
 `;
 

@@ -81,11 +81,7 @@ export const OptionsFooter = styled(NavLink)`
   font-family: "Istok Web", sans-serif;
   font-weight: 600;
   &:hover {
-    color: white;
     transform: scale(1.05);
-  }
-  &.active {
-    color: white;
   }
 
   @media screen and (max-width: 991px) {
@@ -165,7 +161,6 @@ export const IconWithTransition = styled.a`
 
   &:hover {
     transform: scale(1.2);
-    color: white;
   }
 
   @media screen and (max-width: 767px) {

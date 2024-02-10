@@ -425,8 +425,7 @@ export const ContainerTitleContact = styled.div`
 `;
 export const TitleContact = styled.h1`
   background: #f8d15c;
-  width: 310px;
-  padding: 20px;
+  padding: 15px;
   box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
   margin-top: 50px;
 `;

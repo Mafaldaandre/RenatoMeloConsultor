@@ -160,7 +160,7 @@ export const NavigationButtonForwardThumbnail = styled(
 export const RefNumber = styled.p`
   font-weight: 700;
   text-align: center;
-  background-color: #f9e093a3;
+
   padding: 20px;
   width: 200px;
   margin: 50px 0;
@@ -168,6 +168,7 @@ export const RefNumber = styled.p`
   margin-right: auto;
 
   @media screen and (max-width: 767px) {
+    background-color: #f9e093a3;
     margin: 30px 0;
     margin-left: auto;
     margin-right: auto;
@@ -181,7 +182,7 @@ export const Localization = styled.p`
 export const ContainerPrice = styled.div`
   display: flex;
   justify-content: center;
-  background-color: #f9e093a3;
+
   padding: 20px;
   width: 200px;
   margin: 50px 0;
@@ -189,6 +190,7 @@ export const ContainerPrice = styled.div`
   margin-right: auto;
 
   @media screen and (max-width: 767px) {
+    background-color: #f9e093a3;
     margin: 30px 0;
     margin-left: auto;
     margin-right: auto;

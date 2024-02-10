@@ -100,7 +100,7 @@ export const ContentServices = styled.div<ContentProps>`
 export const ContainerTitle = styled.div`
   background: #f8d15c;
   width: 386px;
-  padding: 20px;
+  padding: 15px;
   box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
   margin: 30px 0;
   display: flex;

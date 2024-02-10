@@ -1,15 +1,17 @@
 import { useState } from "react";
 import {
+  ContainerMenu,
   HeaderContainer,
   Logo,
   MenuHamburger,
   MenuIcon,
   Navigation,
   Options,
+  OptionsImage,
 } from "./style";
 
 export const Header = () => {
-  const logo = require("../../assets/logo.gif");
+  const logo = require("../../assets/Logo.png");
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
   const toggleMenu = () => {
@@ -22,15 +24,18 @@ export const Header = () => {
 
   return (
     <HeaderContainer>
-      <Options to="/" className="active">
-        <Logo src={logo} alt="logo" />
-      </Options>
-
-      <MenuIcon onClick={toggleMenu}>
-        <MenuHamburger isOpen={menuOpen} />
-        <MenuHamburger isOpen={menuOpen} />
-        <MenuHamburger isOpen={menuOpen} />
-      </MenuIcon>
+      <ContainerMenu>
+        {" "}
+        <OptionsImage isOpen={menuOpen} to="/">
+          <Logo src={logo} alt="logo" />
+        </OptionsImage>{" "}
+        <MenuIcon onClick={toggleMenu}>
+          {" "}
+          <MenuHamburger isOpen={menuOpen} />
+          <MenuHamburger isOpen={menuOpen} />
+          <MenuHamburger isOpen={menuOpen} />
+        </MenuIcon>
+      </ContainerMenu>
 
       <Navigation isOpen={menuOpen}>
         <Options to="/services" onClick={closeMenu}>
@@ -39,6 +44,9 @@ export const Header = () => {
         <Options to="/housing" onClick={closeMenu}>
           Imóveis
         </Options>
+        <OptionsImage isOpen={menuOpen} to="/">
+          <Logo src={logo} alt="logo" />
+        </OptionsImage>
         <Options to="/contactMe" onClick={closeMenu}>
           Contacta-me
         </Options>
