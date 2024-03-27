@@ -115,7 +115,7 @@ export const InitialPage = () => {
               <ContainerContact smallContainer={!smallContainer}>
                 {" "}
                 <h2>Contacto</h2>
-                <Phone className={isiPhone ? "iphone-paragraph" : ""}>
+                <Phone className={isiPhone ? "Phone" : ""}>
                   <span>Telemóvel: </span>926 649 600
                 </Phone>
                 <p className={isiPhone ? "iphone-paragraph" : ""}>

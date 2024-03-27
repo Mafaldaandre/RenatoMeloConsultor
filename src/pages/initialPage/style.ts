@@ -207,6 +207,7 @@ export const ContainerContact = styled.div<PropsSmallContainer>`
 
 export const Phone = styled.p`
   padding: 5px 0;
+  text-decoration: none;
 `;
 
 export const AboutConsultant = styled.p<PropsSmallContainer>`
