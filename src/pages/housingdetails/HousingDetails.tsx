@@ -62,7 +62,6 @@ export const HousingDetails: React.FC<DetailsProps> = () => {
 
   const handleThumbnailClick = (index: number) => {
     setCurrentIndex(index);
-
     setActiveThumbnail(index);
   };
 
@@ -219,6 +218,7 @@ export const HousingDetails: React.FC<DetailsProps> = () => {
 
   const openImage = (index: number) => {
     setExpandedImageIndex(index);
+    setExpandedCarouselIndex(index); // Atualiza o índice da imagem expandida
   };
 
   const closeImage = () => {
