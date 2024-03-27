@@ -190,8 +190,7 @@ export const Input = styled.input<InputContainerProps>`
   gap: 10px;
   border-radius: 14px;
   border: ${(props) => (props.hasfocus ? "2px solid #f7d15b" : "none")};
-  background-color: ${(props) =>
-    props.hasfocus ? "#eedda4" : " rgb(240 , 229, 215);"};
+  background-color: rgb(240, 229, 215);
   height: 60px;
   box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
   outline: none;
@@ -258,8 +257,7 @@ export const TextArea = styled.textarea<InputContainerProps>`
   width: 100%;
   border-radius: 14px;
   border: ${(props) => (props.hasfocus ? "2px solid #f7d15b" : "none")};
-  background-color: ${(props) =>
-    props.hasfocus ? "#eedda4" : " rgb(240, 229, 215);"};
+  background-color: rgb(240, 229, 215);
   min-height: 60px;
   box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
   outline: none;

@@ -146,6 +146,12 @@ export const ContactMe: React.FC = () => {
     await handleSubmit(e);
   };
 
+  const handleKeyPress = (e: React.KeyboardEvent<HTMLFormElement>) => {
+    if (e.key === "Enter") {
+      e.preventDefault(); // Evita o comportamento padrão de submeter o formulário
+    }
+  };
+
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -189,7 +195,7 @@ export const ContactMe: React.FC = () => {
           <ContainerTitleContact>
             <TitleContact>Estou à sua espera</TitleContact>
           </ContainerTitleContact>
-          <Form onSubmit={handleFormSubmit}>
+          <Form onSubmit={handleFormSubmit} onKeyPress={handleKeyPress}>
             <CenterImage>
               <FormContainer ref={dropdownRef}>
                 <InputContainer>
