@@ -26,8 +26,6 @@ export const InitialPage = () => {
     [itemName: string]: boolean;
   }>({});
 
-  const isiPhone = /iPhone/i.test(navigator.userAgent);
-
   const chooseMe = [
     {
       name: "Compromisso com o Cliente",
@@ -115,10 +113,10 @@ export const InitialPage = () => {
               <ContainerContact smallContainer={!smallContainer}>
                 {" "}
                 <h2>Contacto</h2>
-                <Phone className={isiPhone ? "Phone" : ""}>
+                <Phone>
                   <span>Telemóvel: </span>926 649 600
                 </Phone>
-                <p className={isiPhone ? "iphone-paragraph" : ""}>
+                <p>
                   <span>Email: </span>renato.melo@imorriscas.pt
                 </p>
               </ContainerContact>
