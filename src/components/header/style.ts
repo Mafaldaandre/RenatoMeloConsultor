@@ -49,7 +49,7 @@ export const Navigation = styled.nav<NavigationProps>`
     top: 2.2%;
     background-color: #f7d15b;
     width: 85%;
-    gap: 15px;
+    gap: 10px;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
