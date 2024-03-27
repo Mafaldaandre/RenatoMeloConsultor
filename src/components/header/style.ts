@@ -45,8 +45,8 @@ export const Navigation = styled.nav<NavigationProps>`
     box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
     border: 2px solid #f7d15b;
     position: absolute;
-    height: 233px;
-    top: 3%;
+    height: 245px;
+    top: 2.2%;
     background-color: #f7d15b;
     width: 85%;
     gap: 15px;
@@ -111,7 +111,7 @@ export const MenuIcon = styled.div`
     border: 2px solid #f7d15b;
     border-radius: 10px;
     z-index: 1;
-    margin-bottom: 35px;
+    margin-bottom: 27px;
   }
 `;
 
