@@ -194,7 +194,6 @@ export const ContainerContact = styled.div<PropsSmallContainer>`
   background: #f8d15c;
   width: 284px;
   padding: 20px;
-  text-decoration: none;
   box-shadow: 4px 5px 6px 0px rgba(145, 125, 65, 1);
   margin: ${(props) => (props.smallContainer ? " 50px" : "20px")};
   @media screen and (max-width: 767px) {
@@ -205,8 +204,6 @@ export const ContainerContact = styled.div<PropsSmallContainer>`
     width: 254px;
   }
 `;
-
-export const ContactTitle = styled.h2``;
 
 export const Phone = styled.p`
   padding: 5px 0;

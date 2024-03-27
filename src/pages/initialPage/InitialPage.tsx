@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import {
   AboutConsultant,
   BackgroundInitialPage,
-  ContactTitle,
   ContainerContact,
   ContentInitialPage,
   ImageConsultant,
@@ -26,6 +25,8 @@ export const InitialPage = () => {
   const [showFullTextObject, setShowFullTextObject] = useState<{
     [itemName: string]: boolean;
   }>({});
+
+  const isiPhone = /iPhone/i.test(navigator.userAgent);
 
   const chooseMe = [
     {
@@ -113,11 +114,11 @@ export const InitialPage = () => {
               </TitleSmall>
               <ContainerContact smallContainer={!smallContainer}>
                 {" "}
-                <ContactTitle>Contacto</ContactTitle>
-                <Phone>
+                <h2>Contacto</h2>
+                <Phone className={isiPhone ? "iphone-paragraph" : ""}>
                   <span>Telemóvel: </span>926 649 600
                 </Phone>
-                <p>
+                <p className={isiPhone ? "iphone-paragraph" : ""}>
                   <span>Email: </span>renato.melo@imorriscas.pt
                 </p>
               </ContainerContact>
@@ -194,7 +195,7 @@ export const InitialPage = () => {
             </TitleSmall>
             <ContainerContact smallContainer={smallContainer}>
               {" "}
-              <ContactTitle>Contacto</ContactTitle>
+              <h2>Contacto</h2>
               <Phone>
                 <span>Telemóvel: </span>926 649 600
               </Phone>
