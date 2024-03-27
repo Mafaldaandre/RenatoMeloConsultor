@@ -223,7 +223,10 @@ export const InitialPage = () => {
                 {" "}
                 <ChosseMe onClick={() => handleReadMoreClick(choose.content)}>
                   <ChosseMeSpan>
-                    {choose.name} <span>+</span>
+                    {choose.name}{" "}
+                    <span>
+                      {showFullTextObject[choose.content] ? "-" : "+"}
+                    </span>
                   </ChosseMeSpan>
 
                   {showFullTextObject[choose.content] && (
