@@ -249,7 +249,7 @@ export const ErrorMessage = styled.p`
 
 export const TextArea = styled.textarea<InputContainerProps>`
   display: flex;
-  padding: 12px 24px;
+  padding: 20px 24px;
   align-items: center;
   gap: 10px;
   font-family: "Poppins", sans-serif;
