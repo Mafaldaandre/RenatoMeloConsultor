@@ -223,8 +223,8 @@ export const HousingDetails: React.FC<DetailsProps> = () => {
 
   const closeImage = () => {
     setExpandedImageIndex(null);
-
     setScrollDirection(0);
+    setExpandedCarouselIndex(0); // Retorna o carrossel expandido ao início
   };
 
   const handleScroll = (event: React.WheelEvent<HTMLImageElement>) => {
