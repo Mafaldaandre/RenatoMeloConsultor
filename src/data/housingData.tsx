@@ -49,40 +49,6 @@ export const cards: CardData[] = [
     ],
   },
   {
-    id: 2,
-    title: "Moradia T4",
-    localizationIcon: require("../assets/place-marker.png"),
-    localization: "Santa Iria da Azóia",
-    type: "Venda",
-    price: "749 000 €",
-    refNumber: "Ref. PTF2023-1495 ",
-    imageUrl: require("../assets/moradiaPiscina1.jpg"),
-    condition: 2,
-    typeId: 2,
-    numberDivisions: [
-      {
-        id: 1,
-        count: 4,
-        icon: require("../assets/bathRoom.png"),
-      },
-      {
-        id: 2,
-        count: 4,
-        icon: require("../assets/icon-bed.png"),
-      },
-      {
-        id: 3,
-        count: null,
-        icon: require("../assets/pool.png"),
-      },
-      {
-        id: 4,
-        count: 245 + " m²",
-        icon: require("../assets/area.png"),
-      },
-    ],
-  },
-  {
     id: 3,
     title: "Terreno",
     localizationIcon: require("../assets/place-marker.png"),
