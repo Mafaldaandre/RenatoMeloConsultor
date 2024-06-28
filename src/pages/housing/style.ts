@@ -278,6 +278,8 @@ export const ContainerTitleFavorites = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
+  position: relative;
+  z-index: 2;
 `;
 export const TitleFavorites = styled.h1`
   background: #f8d15c;
