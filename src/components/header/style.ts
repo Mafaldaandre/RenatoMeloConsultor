@@ -13,7 +13,7 @@ export const HeaderContainer = styled.header`
   border-bottom: 2px solid #fff;
   background: #f7d15b;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 750px) {
     height: 274px;
     justify-content: space-evenly;
   }
@@ -22,11 +22,12 @@ export const HeaderContainer = styled.header`
 export const Logo = styled.img`
   width: 200px;
   height: auto;
-  border: 4px solid black;
+  /* border: 4px solid black; */
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 950px) {
     padding-bottom: 20px;
     border: none;
+    width: 180px;
   }
 `;
 
@@ -34,9 +35,17 @@ export const Navigation = styled.nav<NavigationProps>`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 150px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1400px) {
+    gap: 125px;
+  }
+
+  @media screen and (max-width: 1250px) {
+    gap: 75px;
+  }
+
+  @media screen and (max-width: 950px) {
     gap: 35px;
   }
 

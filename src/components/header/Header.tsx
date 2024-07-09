@@ -11,7 +11,8 @@ import {
 } from "./style";
 
 export const Header = () => {
-  const logo = require("../../assets/Logo.png");
+  // const logo = require("../../assets/Logo.png");
+  const logo2 = require("../../assets/logo2.svg").default;
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
   const toggleMenu = () => {
@@ -27,7 +28,7 @@ export const Header = () => {
       <ContainerMenu>
         {" "}
         <OptionsImage isOpen={menuOpen} to="/">
-          <Logo src={logo} alt="logo" />
+          <Logo src={logo2} alt="logo" />
         </OptionsImage>{" "}
         <MenuIcon onClick={toggleMenu}>
           {" "}
@@ -45,7 +46,7 @@ export const Header = () => {
           Imóveis
         </Options>
         <OptionsImage isOpen={menuOpen} to="/">
-          <Logo src={logo} alt="logo" />
+          <Logo src={logo2} alt="logo" />
         </OptionsImage>
         <Options to="/contactMe" onClick={closeMenu}>
           Contacta-me
