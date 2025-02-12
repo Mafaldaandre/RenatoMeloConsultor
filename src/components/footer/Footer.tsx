@@ -14,7 +14,6 @@ import {
 
 export const Footer = () => {
   const imo = require("../../assets/imobiliario.jpg");
-  const imorriscas = require("../../assets/logoImorriscas.png");
 
   const handleLinkClick = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -41,7 +40,6 @@ export const Footer = () => {
         </OptionsFooter>
       </NavigationFooter>
       <ContainerRightFooter>
-        <Imorriscas src={imorriscas} alt="Logo imorriscas" />
         <IconsFooter>
           <IconWithTransition
             href="https://www.facebook.com/profile.php?id=61552064212594"

@@ -45,7 +45,7 @@ export const Housing = () => {
           <Title>Encontre a sua casa de SONHO!</Title>
         </ContainerTitleFavorites>
 
-        <CardContainer numberCards={numberCards}>
+        {/* <CardContainer numberCards={numberCards}>
           {" "}
           {cards.map((card) => (
             <Card key={card.id}>
@@ -101,7 +101,7 @@ export const Housing = () => {
             </Card>
           ))}
           <Outlet />
-        </CardContainer>
+        </CardContainer> */}
         <CenterImage></CenterImage>
       </Background>
     </>

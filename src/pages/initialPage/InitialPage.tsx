@@ -114,10 +114,10 @@ export const InitialPage = () => {
                 {" "}
                 <h2>Contacto</h2>
                 <Phone>
-                  <span>Telemóvel: </span>926 649 600
+                  <span>Telemóvel: </span>
                 </Phone>
                 <p>
-                  <span>Email: </span>renato.melo@imorriscas.pt
+                  <span>Email: </span>
                 </p>
               </ContainerContact>
               <AboutConsultant
@@ -195,10 +195,10 @@ export const InitialPage = () => {
               {" "}
               <h2>Contacto</h2>
               <Phone>
-                <span>Telemóvel: </span>926 649 600
+                <span>Telemóvel: </span>
               </Phone>
               <p>
-                <span>Email: </span>renato.melo@imorriscas.pt
+                <span>Email: </span>
               </p>
             </ContainerContact>
             <AboutConsultant
