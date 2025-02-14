@@ -2,40 +2,40 @@ import { NavLink, Outlet } from "react-router-dom";
 import { CardData, cards } from "../../data/housingData";
 import {
   Background,
-  Card,
-  CardContainer,
+  // Card,
+  // CardContainer,
   CenterImage,
   ContainerTitleFavorites,
-  ContentHouses,
-  HeartIcon,
-  IconLocalization,
-  IconsContainer,
-  ImageCard,
-  Localization,
-  PriceContainer,
+  // ContentHouses,
+  // HeartIcon,
+  // IconLocalization,
+  // IconsContainer,
+  // ImageCard,
+  // Localization,
+  // PriceContainer,
   Title,
-  TitleAndLocalization,
-  TitleCard,
-  Type,
+  // TitleAndLocalization,
+  // TitleCard,
+  // Type,
 } from "./style";
 import React, { useEffect, useState } from "react";
 import { useFavorites } from "../../context/favoritesContext";
 
 export const Housing = () => {
-  const { favorites, dispatch } = useFavorites();
-  const [numberCards, setNumberCards] = useState<boolean>(true);
+  // const { favorites, dispatch } = useFavorites();
+  // const [numberCards, setNumberCards] = useState<boolean>(true);
 
   useEffect(() => {
     setNumberCards(Object.values(cards).length > 3);
   }, []);
 
-  const addFavorite = (card: CardData) => {
-    dispatch({ type: "ADD_FAVORITE", payload: [card] });
-  };
+  // const addFavorite = (card: CardData) => {
+  //   dispatch({ type: "ADD_FAVORITE", payload: [card] });
+  // };
 
-  const removeFavorite = (card: CardData) => {
-    dispatch({ type: "REMOVE_FAVORITE", payload: card });
-  };
+  // const removeFavorite = (card: CardData) => {
+  //   dispatch({ type: "REMOVE_FAVORITE", payload: card });
+  // };
 
   return (
     <>
