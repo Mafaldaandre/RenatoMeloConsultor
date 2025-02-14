@@ -139,19 +139,19 @@ export const IconsFooter = styled.div`
   }
 `;
 
-export const Imorriscas = styled.img`
-  width: 100px;
-  height: 100px;
+// export const Imorriscas = styled.img`
+//   width: 100px;
+//   height: 100px;
 
-  @media screen and (max-width: 991px) {
-    width: 80px;
-    height: 80px;
-  }
+//   @media screen and (max-width: 991px) {
+//     width: 80px;
+//     height: 80px;
+//   }
 
-  @media screen and (max-width: 767px) {
-    margin: 30px;
-  }
-`;
+//   @media screen and (max-width: 767px) {
+//     margin: 30px;
+//   }
+// `;
 
 export const IconWithTransition = styled.a`
   transition: transform 0.7s ease-in-out;

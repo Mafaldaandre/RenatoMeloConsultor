@@ -7,7 +7,7 @@ import {
   IconWithTransition,
   IconsFooter,
   ImageFooter,
-  Imorriscas,
+  // Imorriscas,
   NavigationFooter,
   OptionsFooter,
 } from "./style";
